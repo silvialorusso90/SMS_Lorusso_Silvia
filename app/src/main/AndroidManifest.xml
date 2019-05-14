@@ -11,8 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Visualizza_menu_activity"></activity>
-        <activity android:name=".Visualizza_comande_activity" />
+        <activity
+            android:name=".Visualizza_menu_activity"
+            android:label="Menu"/>
+        <activity
+            android:name=".Visualizza_comande_activity"
+            android:label="Ordini"/>
         <activity
             android:name=".ClienteActivity"
             android:label="Cliente" />
