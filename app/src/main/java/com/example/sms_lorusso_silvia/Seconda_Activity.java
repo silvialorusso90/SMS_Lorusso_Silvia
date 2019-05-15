@@ -4,10 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 
-public class SecondaActivity extends AppCompatActivity {
+public class Seconda_Activity extends AppCompatActivity {
 
     //private static final String LOG_TAG = A2Activity.class.getSimpleName();
 
@@ -27,7 +26,7 @@ public class SecondaActivity extends AppCompatActivity {
 
     public void lanciaClienteActivity(View view) {
         //Log.d(LOG_TAG, "Button clicked!");
-        Intent intent2 = new Intent(this, ClienteActivity.class);
+        Intent intent2 = new Intent(this, Cliente_Activity.class);
         startActivity(intent2);
     }
 }

@@ -7,25 +7,26 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.example.sms_lorusso_silvia.mMySQL.Downloader_v_c;
+import com.example.sms_lorusso_silvia.mDataObject.Piatti;
+import com.example.sms_lorusso_silvia.mMySQL.Downloader_r_p;
 
-public class Visualizza_comande_activity extends AppCompatActivity {
+public class Rimuovi_Piatto_Activity extends AppCompatActivity {
 
-    String url="http://spacecrafts.altervista.org/LetturaDati/comande.php";
+    //private static final String LOG_TAG = Visualizza_menu_activity.class.getSimpleName();
+
+    String url="http://spacecrafts.altervista.org/LetturaDati/piatti.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visualizza_comande);
+        setContentView(R.layout.activity_rimuovi_pi);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        setTitle("Ordini: ");
-
-        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rec_v_c);
+        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rec_r_p);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        new Downloader_v_c(this, url, recyclerView).execute();
+        new Downloader_r_p(this, url, recyclerView).execute();
     }
 }

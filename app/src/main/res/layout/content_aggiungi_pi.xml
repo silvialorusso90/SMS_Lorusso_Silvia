@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Aggiungi_Piatto_Activity"
+    tools:showIn="@layout/activity_aggiungi_pi">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="50dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nomeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nomeEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint= "Nome" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tipoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/tipoEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Tipo" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/prezzoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/prezzoEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Prezzo" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button android:id="@+id/saveBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:clickable="true"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>

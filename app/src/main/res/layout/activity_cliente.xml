@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
 
     android:fitsSystemWindows="true"
-    tools:context="com.example.sms_lorusso_silvia.ClienteActivity">
+    tools:context="com.example.sms_lorusso_silvia.Cliente_Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

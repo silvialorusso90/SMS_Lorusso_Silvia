@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
 
     android:fitsSystemWindows="true"
-    tools:context=".Seconda_Activity">
+    tools:context=".Modifica_menu_activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -23,6 +23,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_seconda" />
+    <include layout="@layout/content_modifica_menu" />
 
 </android.support.design.widget.CoordinatorLayout>

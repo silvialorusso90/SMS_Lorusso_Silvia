@@ -5,33 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SecondaActivity"
+    tools:context=".Seconda_Activity"
     tools:showIn="@layout/activity_seconda"    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chi sta usando l'applicazione?"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
         android:layout_marginLeft="150dp"
         />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
         android:text="Ristoratore"
         android:onClick="lanciaRistoratoreAxctivity"
         />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
-        android:text="Cliente"
-        android:onClick="lanciaClienteActivity"/>
+        android:onClick="lanciaClienteActivity"
+        android:text="Cliente" />
 
 
 </RelativeLayout>

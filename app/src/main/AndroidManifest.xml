@@ -11,20 +11,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".Rimuovi_Piatto_Activity" />
+        <activity
+            android:name=".Aggiungi_Piatto_Activity"
+            android:label="Aggiungi piatto" />
+        <activity
+            android:name=".Modifica_menu_activity"
+            android:label="Modifica menu" />
         <activity
             android:name=".Visualizza_menu_activity"
-            android:label="Menu"/>
+            android:label="Menu" />
         <activity
             android:name=".Visualizza_comande_activity"
-            android:label="Ordini"/>
+            android:label="Ordini" />
         <activity
-            android:name=".ClienteActivity"
+            android:name=".Cliente_Activity"
             android:label="Cliente" />
         <activity
             android:name=".RistoratoreActivity"
             android:label="Ristoratore" />
         <activity
-            android:name=".SecondaActivity"
+            android:name=".Seconda_Activity"
             android:label="@string/app_name" />
         <activity
             android:name=".MainActivity"
