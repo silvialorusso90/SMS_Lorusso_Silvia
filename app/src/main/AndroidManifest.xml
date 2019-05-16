@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Paga_Activity"></activity>
+        <activity android:name=".Pagadopo_Activity"></activity>
+        <activity android:name=".Pagato_Activity" />
+        <activity android:name=".Paga_Activity" />
         <activity android:name=".Riepilogo_Ordine_Activity" />
         <activity android:name=".Ordina_Ins_Piatto_Activity" />
         <activity android:name=".Ordina_Ins_Cliente_Activity" />

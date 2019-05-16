@@ -23,6 +23,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/cont_riepilogo_ordine" />
+    <include layout="@layout/content_riepilogo_ordine" />
 
 </android.support.design.widget.CoordinatorLayout>

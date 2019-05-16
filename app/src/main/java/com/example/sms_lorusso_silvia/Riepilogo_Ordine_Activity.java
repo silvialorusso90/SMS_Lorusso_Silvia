@@ -43,4 +43,9 @@ public class Riepilogo_Ordine_Activity extends AppCompatActivity {
         Intent i = new Intent(Riepilogo_Ordine_Activity.this, Paga_Activity.class);
         startActivity(i);
     }
+
+    public void lanciapagadopo(View view) {
+        Intent i = new Intent(Riepilogo_Ordine_Activity.this, Pagadopo_Activity.class);
+        startActivity(i);
+    }
 }

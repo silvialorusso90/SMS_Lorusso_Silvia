@@ -1,6 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="80dp">
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Numero Carta"
+        android:textSize="14sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nCarta"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nCartaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="0000 0000 0000 0000"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Scadenza Carta"
+        android:textSize="14sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/nCarta"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/sCarta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  >
+
+        <EditText
+            android:id="@+id/sCartaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="mm/AAAA"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="10dp
+"
+        android:layout_marginTop="31dp"
+        android:text="CVV"
+        android:textSize="14sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/sCarta"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/cvvCarta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/cvvCartaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="000"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+   <Button
+       android:id="@+id/btnPaga"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="220dp"
+       android:text="paga"
+       android:layout_centerHorizontal="true"
+       android:onClick="lanciaPagato"/>
 </RelativeLayout>
