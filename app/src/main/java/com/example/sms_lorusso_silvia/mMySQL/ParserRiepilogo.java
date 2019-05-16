@@ -19,7 +19,6 @@ class ParserRiepilogo extends AsyncTask<Void,Void,Integer> {
     Context c;
     String jsonData;
     RecyclerView rv;
-    String tel;
 
     ProgressDialog pd;
     public ArrayList<Carrello> carrello =new ArrayList<>();
@@ -72,17 +71,17 @@ class ParserRiepilogo extends AsyncTask<Void,Void,Integer> {
                 jo=ja.getJSONObject(i);
 
                 String telefono = jo.getString("Telefono");
-                String nome=jo.getString("NomePiatto");
-                String tipo=jo.getString("TipoPiatto");
-                String prezzo=jo.getString("PrezzoPiatto");
-                String ora=jo.getString("OraConsegna");
+                String nome=jo.getString("Nome Piatto");
+                String tipo=jo.getString("Portata");
+                String prezzo=jo.getString("Prezzo");
+                //String ora=jo.getString("OraConsegna");
 
                 s = new Carrello();
                 s.setTelefono(telefono);
                 s.setNomeP(nome);
                 s.setTipoP(tipo);
                 s.setPrezzoP(prezzo);
-                s.setOraC(ora);
+                //s.setOraC(ora);
 
                 carrello.add(s);
 

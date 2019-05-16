@@ -2,24 +2,15 @@ package com.example.sms_lorusso_silvia.mMySQL;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.graphics.drawable.ColorDrawable;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Toast;
-import android.widget.TextView;
-import android.widget.FrameLayout;
+import java.util.ArrayList;
 
 import com.example.sms_lorusso_silvia.R;
 import com.example.sms_lorusso_silvia.mDataObject.Piatti;
-
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.List;
 
 class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
 
@@ -51,7 +42,6 @@ class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
         holder.nomeTxt.setText(mPiatti.get(position).getNome());
         holder.tipoTxt.setText(mPiatti.get(position).getTipo());
         holder.prezzoTxt.setText(mPiatti.get(position).getPrezzo());
-
 
         holder.setItemClickListener(new ItemClickListener() {
             @Override

@@ -73,7 +73,7 @@ public class Parser_r_p extends AsyncTask<Void,Integer,Integer> {
                 jo=ja.getJSONObject(i);
 
                 String nome=jo.getString("Nome");
-                String tipo=jo.getString("Tipo");
+                String tipo=jo.getString("Portata");
                 String prezzo=jo.getString("Prezzo");
 
                 s=new Piatti();

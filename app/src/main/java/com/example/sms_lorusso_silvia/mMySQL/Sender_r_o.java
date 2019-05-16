@@ -2,8 +2,10 @@ package com.example.sms_lorusso_silvia.mMySQL;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -12,46 +14,32 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 
-import com.example.sms_lorusso_silvia.mDataObject.Carrello;
-
-class Sender_o_i_p extends AsyncTask<Void,Void,String> {
+class Sender_r_o extends AsyncTask<Void,Void,String>{
 
     Context c;
-    String url, tel, nomeP, tipoP, prezzoP, oraC;
-    Carrello carrello;
+    String url;
+    //String nome;
 
     ProgressDialog pd;
 
-    public Sender_o_i_p(Context c, String url, String tel, String nomeP, String tipoP, String prezzoP, String oraC) {
+    public Sender_r_o(Context c, String url) {
         this.c = c;
         this.url = url;
-        this.tel = tel;
-        this.nomeP = nomeP;
-        this.tipoP = tipoP;
-        this.prezzoP = prezzoP;
-        this.oraC = oraC;
-
-        carrello = new Carrello();
-
-        carrello.setTelefono(tel);
-        carrello.setNomeP(nomeP);
-        carrello.setTipoP(tipoP);
-        carrello.setPrezzoP(prezzoP);
-        carrello.setOraC(oraC);
-
     }
 
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
+
         pd=new ProgressDialog(c);
         pd.setTitle("Send");
         pd.setMessage("Sending...Please wait");
         pd.show();
     }
 
+
     @Override
-    protected String doInBackground(Void... params) {
+    protected String doInBackground(Void... voids) {
         return this.send();
     }
 
@@ -61,39 +49,30 @@ class Sender_o_i_p extends AsyncTask<Void,Void,String> {
 
         pd.dismiss();
 
-        if(s==null) {
-
+        if(s==null)
+        {
             Toast.makeText(c,"Unsuccessful,Null returned",Toast.LENGTH_SHORT).show();
-        }
-        else{
-            if(s=="Bad Response") {
+        }else
+        {
+            if(s=="Bad Response")
+            {
                 Toast.makeText(c,"Unsuccessful,Bad Response returned",Toast.LENGTH_SHORT).show();
-            }
-            else {
-                Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
 
+            }else
+            {
+                Toast.makeText(c,"Successfully Delete",Toast.LENGTH_SHORT).show();
             }
         }
-
     }
 
-    private String send() {
-        HttpURLConnection con=ConnectorP.connect(url);
-        if(con==null) {
+    private String send()
+    {
+        HttpURLConnection con= ConnectorP.connect(url);
+        if(con==null)
+        {
             return null;
         }
         try {
-
-            OutputStream os=con.getOutputStream();
-
-            //WRITE
-            BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
-            bw.write(new Packager_o_i_p(carrello).packData());
-
-            bw.flush();
-            //RELEASE
-            bw.close();
-            os.close();
 
             //SUCCESS OR NOT??
             int responseCode=con.getResponseCode();
@@ -103,15 +82,15 @@ class Sender_o_i_p extends AsyncTask<Void,Void,String> {
                 StringBuffer response=new StringBuffer();
 
                 String line;
-                while ((line=br.readLine()) != null) {
+                while ((line=br.readLine()) != null)
+                {
                     response.append(line);
                 }
 
                 br.close();
 
                 return response.toString();
-            }
-            else {
+            }else {
                 return "Bad Response";
             }
         } catch (IOException e) {

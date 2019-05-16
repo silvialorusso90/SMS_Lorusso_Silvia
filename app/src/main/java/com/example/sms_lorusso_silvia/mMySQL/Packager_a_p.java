@@ -24,7 +24,7 @@ public class Packager_a_p {
 
         try {
             jo.put("Nome", piatti.getNome());
-            jo.put("Tipo", piatti.getTipo());
+            jo.put("Portata", piatti.getTipo());
             jo.put("Prezzo", piatti.getPrezzo());
 
             Boolean firstvalue=true;

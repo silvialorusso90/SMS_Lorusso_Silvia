@@ -23,10 +23,10 @@ public class Packager_o_i_p {
 
         try {
             jo.put("Telefono", carrello.getTelefono());
-            jo.put("NomePiatto", carrello.getNomeP());
-            jo.put("TipoPiatto", carrello.getTipoP());
-            jo.put("PrezzoPiatto", carrello.getPrezzoP());
-            jo.put("OraConsegna", carrello.getOraC());
+            jo.put("Piatto", carrello.getNomeP());
+            jo.put("Portata", carrello.getTipoP());
+            jo.put("Prezzo", carrello.getPrezzoP());
+            jo.put("Ora", carrello.getOraC());
 
             Boolean firstvalue=true;
             Iterator it=jo.keys();

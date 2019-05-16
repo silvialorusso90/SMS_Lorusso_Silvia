@@ -34,8 +34,8 @@ public class Ordina_Ins_Piatto_Activity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         final String tel = extras.getString("Telefono");
-        String orac = extras.getString("OraConsegna");
-        setTitle(tel);
+        final String orac = extras.getString("OraConsegna");
+        setTitle("Tel: "+tel+" OraC: "+orac);
 
         Toast.makeText(this, orac, Toast.LENGTH_SHORT).show();
 
@@ -53,6 +53,7 @@ public class Ordina_Ins_Piatto_Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(Ordina_Ins_Piatto_Activity.this, Riepilogo_Ordine_Activity.class);
                 i.putExtra("Telefono", tel);
+                i.putExtra("OraConsegna", orac);
                 startActivity(i);
             }
         });

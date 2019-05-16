@@ -75,10 +75,10 @@ class Parser_v_c extends AsyncTask<Void,Integer,Integer> {
                 jo=ja.getJSONObject(i);
 
                 String telefono = jo.getString("Telefono");
-                String nome=jo.getString("Nome Piatto");
+                String nome=jo.getString("Piatto");
                 String portata=jo.getString("Portata");
                 String prezzo=jo.getString("Prezzo");
-                String ora = jo.getString("Ora Consegna");
+                String ora = jo.getString("Ora");
 
                 s = new Carrello();
                 s.setTelefono(telefono);

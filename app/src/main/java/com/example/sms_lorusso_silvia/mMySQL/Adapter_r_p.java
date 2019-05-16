@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupMenu;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 
 import com.example.sms_lorusso_silvia.DetailActivity;

@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import java.io.BufferedInputStream;

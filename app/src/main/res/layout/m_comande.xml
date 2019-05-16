@@ -59,7 +59,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="100dp"
             android:padding="5dp"
-            android:text="Nome Piatto"
+            android:text="Piatto"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="14dp" />
 
@@ -134,7 +134,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="100dp"
             android:padding="5dp"
-            android:text="Ora Consegna"
+            android:text="Ora"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="14dp" />
 
