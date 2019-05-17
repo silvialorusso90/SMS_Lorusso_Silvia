@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:padding="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Aggiungi_Piatto_Activity"
     tools:showIn="@layout/activity_aggiungi_pi">
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"
         android:orientation="vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="50dp">
+        android:padding="20dp"   >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inserisci i dati del piatto"   />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/nomeLayout"
@@ -43,8 +43,8 @@
                 android:id="@+id/tipoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:hint="Tipo" />
+                android:singleLine="true"
+                android:hint="Portata" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -56,18 +56,20 @@
                 android:id="@+id/prezzoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:singleLine="true"
                 android:hint="Prezzo" />
 
         </android.support.design.widget.TextInputLayout>
 
-        <Button android:id="@+id/saveBtn"
-            android:layout_width="fill_parent"
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:text="Save"
-            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
             android:background="@color/colorAccent"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/white"/>
+            android:clickable="true"
+            android:text="Salva"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </RelativeLayout>

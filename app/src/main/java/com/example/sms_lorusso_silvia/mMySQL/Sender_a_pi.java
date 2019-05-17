@@ -6,10 +6,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.sms_lorusso_silvia.RistoratoreActivity;
-import com.example.sms_lorusso_silvia.mDataObject.Piatti;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -17,6 +13,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import android.support.v7.app.AlertDialog;
+
+import com.example.sms_lorusso_silvia.RistoratoreActivity;
+import com.example.sms_lorusso_silvia.mDataObject.Piatti;
 
 public class Sender_a_pi extends AsyncTask<Void,Void,String> {
 
@@ -73,17 +73,24 @@ public class Sender_a_pi extends AsyncTask<Void,Void,String> {
 
             }else
             {
-                Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
+                showDialog("Piatto salvato con successo", "Successo", android.R.drawable.ic_dialog_info);
+                //Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
 
                 //CLEAR UI
                 nomeTxt.setText("");
                 tipoTxt.setText("");
                 prezzoTxt.setText("");
 
-                Intent i = new Intent(c, RistoratoreActivity.class);
-                c.startActivity(i);
+                intent();
+
+
             }
         }
+    }
+
+    private void intent() {
+        Intent i = new Intent(c, RistoratoreActivity.class);
+        c.startActivity(i);
     }
 
     private String send()
@@ -131,4 +138,14 @@ public class Sender_a_pi extends AsyncTask<Void,Void,String> {
 
         return null;
     }
+
+    private void showDialog(String message, String title, int icon){
+        new AlertDialog.Builder(c)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok,null)
+                .setIcon(icon)
+                .show();
+    }
+
 }

@@ -17,7 +17,6 @@
         <activity android:name=".Riepilogo_Ordine_Activity" />
         <activity android:name=".Ordina_Ins_Piatto_Activity" />
         <activity android:name=".Ordina_Ins_Cliente_Activity" />
-        <activity android:name=".DetailActivity" />
         <activity android:name=".Rimuovi_Piatto_Activity" />
         <activity
             android:name=".Aggiungi_Piatto_Activity"

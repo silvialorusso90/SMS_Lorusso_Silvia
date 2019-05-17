@@ -11,18 +11,21 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:text="Aggiungi piatto"
-        android:onClick="lanciaAggiungiPiatto"  />
+        android:onClick="lanciaAggiungiPiatto"
+        android:text="Aggiungi piatto" />
+
     <Button
         android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
-        android:text="Rimuovi piatto"
-        android:onClick="lanciaRimuoviPiatto" />
+        android:onClick="lanciaRimuoviPiatto"
+        android:text="Rimuovi piatto" />
 
 
 </RelativeLayout>

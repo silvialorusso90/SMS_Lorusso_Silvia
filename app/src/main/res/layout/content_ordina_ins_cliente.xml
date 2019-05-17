@@ -4,29 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:padding="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Ordina_Ins_Cliente_Activity"
     tools:showIn="@layout/activity_ordina__ins__cliente">
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"
         android:orientation="vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="10dp">
+        android:padding="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inserisci i tuoi dati"
-
-            />
+            android:text="Inserisci i tuoi dati"   />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/nomeU"
@@ -50,7 +43,7 @@
                 android:id="@+id/cognomeEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:singleLine="true"
                 android:hint="Cognome" />
         </android.support.design.widget.TextInputLayout>
 
@@ -63,7 +56,7 @@
                 android:id="@+id/telefonoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:singleLine="true"
                 android:hint="Telefono" />
         </android.support.design.widget.TextInputLayout>
 
@@ -76,20 +69,21 @@
                 android:id="@+id/oraconsegnaEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:singleLine="true"
                 android:hint="Ora Consegna: OO.MM" />
         </android.support.design.widget.TextInputLayout>
 
 
-
-        <Button android:id="@+id/saveBtn"
-            android:layout_width="fill_parent"
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:text="Save"
-            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
             android:background="@color/colorAccent"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/white"/>
+            android:clickable="true"
+            android:text="Save"
+            android:textColor="@android:color/white" />
 
 
     </LinearLayout>

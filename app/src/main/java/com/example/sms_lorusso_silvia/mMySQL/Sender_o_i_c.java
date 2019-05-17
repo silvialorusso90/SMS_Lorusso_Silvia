@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -81,6 +82,7 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
             }
             else {
                 Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
+                showDialog("Utente salvato con successo", "Successo", android.R.drawable.ic_dialog_info);
 
                 //CLEAR UI
                 nomeTxt.setText("");
@@ -140,6 +142,15 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
         }
 
         return null;
+    }
+
+    private void showDialog(String message, String title, int icon){
+        new AlertDialog.Builder(c)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok,null)
+                .setIcon(icon)
+                .show();
     }
 
 }
