@@ -19,7 +19,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inserisci i dati del piatto"   />
+            android:text="Inserisci i dati del piatto"
+            android:textSize="14dp" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/nomeLayout"
@@ -30,8 +31,9 @@
                 android:id="@+id/nomeEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Nome"
                 android:singleLine="true"
-                android:hint= "Nome" />
+                android:textSize="14dp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -43,8 +45,9 @@
                 android:id="@+id/tipoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Portata"
                 android:singleLine="true"
-                android:hint="Portata" />
+                android:textSize="14dp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -56,8 +59,9 @@
                 android:id="@+id/prezzoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Prezzo"
                 android:singleLine="true"
-                android:hint="Prezzo" />
+                android:textSize="14dp" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -70,6 +74,7 @@
             android:background="@color/colorAccent"
             android:clickable="true"
             android:text="Salva"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
     </LinearLayout>
 </RelativeLayout>

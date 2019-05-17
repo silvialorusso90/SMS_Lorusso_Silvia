@@ -11,7 +11,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:text="Numero Carta"
-        android:textSize="14sp" />
+        android:textSize="14dp" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/nCarta"
@@ -38,7 +38,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="35dp"
         android:text="Scadenza Carta"
-        android:textSize="14sp" />
+        android:textSize="14dp" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_below="@id/nCarta"
@@ -67,7 +67,7 @@
 "
         android:layout_marginTop="31dp"
         android:text="CVV"
-        android:textSize="14sp" />
+        android:textSize="14dp" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_below="@id/sCarta"
@@ -94,5 +94,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="220dp"
         android:onClick="lanciaPagato"
-        android:text="paga" />
+        android:text="paga"
+        android:textSize="14dp" />
 </RelativeLayout>

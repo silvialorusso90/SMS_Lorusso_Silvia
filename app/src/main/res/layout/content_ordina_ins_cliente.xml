@@ -19,7 +19,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inserisci i tuoi dati"   />
+            android:text="Inserisci i tuoi dati"
+            android:textSize="14dp" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/nomeU"
@@ -30,8 +31,9 @@
                 android:id="@+id/nomeEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Nome"
                 android:singleLine="true"
-                android:hint= "Nome" />
+                android:textSize="14dp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -43,8 +45,9 @@
                 android:id="@+id/cognomeEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Cognome"
                 android:singleLine="true"
-                android:hint="Cognome" />
+                android:textSize="14dp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -56,8 +59,9 @@
                 android:id="@+id/telefonoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Telefono"
                 android:singleLine="true"
-                android:hint="Telefono" />
+                android:textSize="14dp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -69,8 +73,9 @@
                 android:id="@+id/oraconsegnaEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Ora Consegna: OO.MM"
                 android:singleLine="true"
-                android:hint="Ora Consegna: OO.MM" />
+                android:textSize="14dp" />
         </android.support.design.widget.TextInputLayout>
 
 
@@ -83,7 +88,8 @@
             android:background="@color/colorAccent"
             android:clickable="true"
             android:text="Save"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
 
 
     </LinearLayout>

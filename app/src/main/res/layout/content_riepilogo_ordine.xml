@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Riepilogo ordine: "
-      />
+        android:textSize="14dp" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_below="@id/textView"
@@ -29,15 +29,17 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
         android:onClick="Lanciapagaora"
-        android:text="Paga ora" />
+        android:text="Paga ora"
+        android:textSize="14dp" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginRight="20dp"
         android:onClick="lanciapagadopo"
-        android:text="Paga alla consegna" />
+        android:text="Paga alla consegna"
+        android:textSize="14dp" />
 </RelativeLayout>
