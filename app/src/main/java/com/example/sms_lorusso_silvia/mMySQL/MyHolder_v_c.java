@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import com.example.sms_lorusso_silvia.R;
 import com.example.sms_lorusso_silvia.mMySQL.ItemClickListener;
 
-class MyHolder_v_c extends RecyclerView.ViewHolder implements View.OnClickListener{
+public class MyHolder_v_c extends RecyclerView.ViewHolder implements View.OnClickListener{
 
     TextView telefono, nome, tipo, prezzo, orac;
     ItemClickListener itemClickListener;

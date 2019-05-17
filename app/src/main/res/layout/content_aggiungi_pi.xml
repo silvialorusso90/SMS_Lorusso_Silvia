@@ -19,8 +19,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inserisci i dati del piatto"
-            android:textSize="14dp" />
+            android:text="@string/inserisci_i_dati_del_piatto"
+            android:textSize="14sp" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/nomeLayout"
@@ -31,9 +31,9 @@
                 android:id="@+id/nomeEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome"
+                android:hint="@string/nome"
                 android:singleLine="true"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -45,9 +45,9 @@
                 android:id="@+id/tipoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Portata"
+                android:hint="@string/portata"
                 android:singleLine="true"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -59,9 +59,9 @@
                 android:id="@+id/prezzoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Prezzo"
+                android:hint="@string/prezzo"
                 android:singleLine="true"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -73,8 +73,9 @@
             android:layout_marginTop="50dp"
             android:background="@color/colorAccent"
             android:clickable="true"
-            android:text="Salva"
+            android:text="@string/salva"
             android:textColor="@android:color/white"
-            android:textSize="14dp" />
+            android:textSize="14sp"
+            android:focusable="true" />
     </LinearLayout>
 </RelativeLayout>

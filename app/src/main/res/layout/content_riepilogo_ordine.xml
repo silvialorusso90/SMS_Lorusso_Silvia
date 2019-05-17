@@ -10,8 +10,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Riepilogo ordine: "
-        android:textSize="14dp" />
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20sp"
+        android:text="@string/riepilogo_ordine"
+        android:textSize="14sp" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_below="@id/textView"
@@ -29,8 +31,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
         android:onClick="Lanciapagaora"
-        android:text="Paga ora"
-        android:textSize="14dp" />
+        android:text="@string/paga_ora"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp" />
 
     <Button
         android:id="@+id/button1"
@@ -40,6 +43,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="20dp"
         android:onClick="lanciapagadopo"
-        android:text="Paga alla consegna"
-        android:textSize="14dp" />
+        android:text="@string/paga_alla_consegna"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
 </RelativeLayout>

@@ -10,14 +10,16 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="Numero Carta"
-        android:textSize="14dp" />
+        android:text="@string/numero_carta"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/nCarta"
         android:layout_marginLeft="100dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp">
 
         <EditText
             android:id="@+id/nCartaTxt"
@@ -25,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
-            android:hint="0000 0000 0000 0000"
+            android:hint="@string/_0000_0000_0000_0000"
             android:singleLine="true"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
@@ -37,15 +39,17 @@
         android:layout_below="@id/textView1"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="35dp"
-        android:text="Scadenza Carta"
-        android:textSize="14dp" />
+        android:text="@string/scadenza_carta"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_below="@id/nCarta"
         android:layout_marginLeft="100dp"
         android:id="@+id/sCarta"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"  >
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp">
 
         <EditText
             android:id="@+id/sCartaTxt"
@@ -53,9 +57,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
-            android:hint="mm/AAAA"
+            android:hint="@string/mm_aaaa"
             android:singleLine="true"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
@@ -63,18 +69,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView2"
-        android:layout_marginLeft="10dp
-"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="31dp"
-        android:text="CVV"
-        android:textSize="14dp" />
+        android:text="@string/cvv"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_below="@id/sCarta"
         android:layout_marginLeft="100dp"
         android:id="@+id/cvvCarta"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp">
 
         <EditText
             android:id="@+id/cvvCartaTxt"
@@ -82,9 +89,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
-            android:hint="000"
+            android:hint="@string/n_cvv"
             android:singleLine="true"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -93,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="220dp"
-        android:onClick="lanciaPagato"
-        android:text="paga"
-        android:textSize="14dp" />
+        android:clickable="true"
+        android:text="@string/paga"
+        android:textSize="14sp" />
 </RelativeLayout>

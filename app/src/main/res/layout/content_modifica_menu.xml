@@ -16,8 +16,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         android:onClick="lanciaAggiungiPiatto"
-        android:text="Aggiungi piatto"
-        android:textSize="14dp" />
+        android:text="@string/aggiungi_piatto"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/button2"
@@ -26,8 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
         android:onClick="lanciaRimuoviPiatto"
-        android:text="Rimuovi piatto"
-        android:textSize="14dp" />
-
+        android:text="@string/rimuovi_piatto"
+        android:textSize="14sp" />
 
 </RelativeLayout>

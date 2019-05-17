@@ -50,7 +50,7 @@ public class AdapterRiepilogo extends RecyclerView.Adapter<MyHolderRiepilogo>{
 
                 //Display option menu
                 PopupMenu popupMenu = new PopupMenu(c, holder.nomeTxt);
-                popupMenu.inflate(R.menu.options_menu);
+                popupMenu.inflate(R.menu.rimuovi_menu);
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {

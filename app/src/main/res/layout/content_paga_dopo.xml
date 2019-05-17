@@ -8,6 +8,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="grazie per averci scelto, a dopo!"
-        android:textSize="14dp" />
+        android:text="@string/grazie_per_averci_scelto_a_dopo"
+        android:textSize="14sp" />
 </RelativeLayout>

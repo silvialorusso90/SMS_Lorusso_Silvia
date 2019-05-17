@@ -8,8 +8,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="140dp"
-        android:text="Cliente"
-        android:textSize="14dp" />
+        android:text="@string/cliente"
+        android:textSize="14sp"
+        android:layout_marginStart="150dp" />
 
     <Button
         android:id="@+id/button"
@@ -18,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
         android:onClick="lanciaOrdineCliente"
-        android:text="Ordina"
-        android:textSize="14dp" />
+        android:text="@string/ordina"
+        android:textSize="14sp" />
 
 </RelativeLayout>

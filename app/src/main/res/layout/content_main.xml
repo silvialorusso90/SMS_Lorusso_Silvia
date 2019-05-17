@@ -13,9 +13,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="200dp"
-        android:text="app ordini"
+        android:text="@string/nome_app"
 
-        android:textSize="14dp" />
+        android:textSize="14sp"
+        android:layout_marginStart="150dp" />
 
     <Button
         android:id="@+id/button_main"
@@ -24,8 +25,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
         android:onClick="launchSecondActivity"
-        android:text="avanti"
-        android:textSize="14dp" />
+        android:text="@string/avanti"
+        android:textSize="14sp" />
 
 
 </RelativeLayout>

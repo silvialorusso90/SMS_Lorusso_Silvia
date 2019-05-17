@@ -14,7 +14,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-class ParserRiepilogo extends AsyncTask<Void,Void,Integer> {
+public class ParserRiepilogo extends AsyncTask<Void,Void,Integer> {
 
     Context c;
     String jsonData;

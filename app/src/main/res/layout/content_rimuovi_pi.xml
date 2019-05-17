@@ -13,11 +13,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleziona piatto da rimuovere"
+        android:text="@string/seleziona_piatto_da_rimuovere"
         android:layout_marginLeft="10dp"
         android:paddingTop="10dp"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"/>
+        android:paddingRight="10dp"
+        android:layout_marginStart="10dp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rec_r_p"

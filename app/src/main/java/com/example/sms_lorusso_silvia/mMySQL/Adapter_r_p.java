@@ -50,7 +50,7 @@ public class Adapter_r_p extends RecyclerView.Adapter<MyHolder_r_p>{
             public void onItemClick(int pos) {
 
                 PopupMenu popupMenu = new PopupMenu(c, holder.nome);
-                popupMenu.inflate(R.menu.options_menu);
+                popupMenu.inflate(R.menu.rimuovi_menu);
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {

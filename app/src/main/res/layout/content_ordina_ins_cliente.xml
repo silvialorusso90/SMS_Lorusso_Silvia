@@ -19,8 +19,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inserisci i tuoi dati"
-            android:textSize="14dp" />
+            android:text="@string/inserisci_i_tuoi_dati"
+            android:textSize="14sp" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/nomeU"
@@ -31,9 +31,9 @@
                 android:id="@+id/nomeEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome"
+                android:hint="@string/nome"
                 android:singleLine="true"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -45,9 +45,9 @@
                 android:id="@+id/cognomeEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cognome"
+                android:hint="@string/cognome"
                 android:singleLine="true"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -59,9 +59,9 @@
                 android:id="@+id/telefonoEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Telefono"
+                android:hint="@string/tel"
                 android:singleLine="true"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -73,11 +73,10 @@
                 android:id="@+id/oraconsegnaEditTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ora Consegna: OO.MM"
+                android:hint="@string/ora_consegna"
                 android:singleLine="true"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>
-
 
         <Button
             android:id="@+id/saveBtn"
@@ -87,10 +86,10 @@
             android:layout_marginTop="50dp"
             android:background="@color/colorAccent"
             android:clickable="true"
-            android:text="Save"
+            android:text="@string/salva"
             android:textColor="@android:color/white"
-            android:textSize="14dp" />
-
+            android:textSize="14sp"
+            android:focusable="true" />
 
     </LinearLayout>
 </RelativeLayout>

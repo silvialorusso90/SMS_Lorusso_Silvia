@@ -8,22 +8,22 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="il pagamento è andato a buon fine"
-        android:textSize="14dp" />
+        android:text="@string/il_pagamento_andato_a_buon_fine"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView4"
-        android:text="grazie di averci scelto"
-        android:textSize="14dp" />
+        android:text="@string/grazie_di_averci_scelto"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView5"
-        android:text="a dopo"
-        android:textSize="14dp" />
+        android:text="@string/a_dopo"
+        android:textSize="14sp" />
 </RelativeLayout>

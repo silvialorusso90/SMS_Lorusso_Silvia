@@ -4,15 +4,19 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 import java.util.ArrayList;
 
 import com.example.sms_lorusso_silvia.R;
 import com.example.sms_lorusso_silvia.mDataObject.Piatti;
 
-class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
+public class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
+
+    String url="http://spacecrafts.altervista.org/ScritturaDati/scrivi_carrello.php";
 
     Context c;
     ArrayList<Piatti> mPiatti;
@@ -38,7 +42,7 @@ class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyHolder_o_i_p holder, final int position) {
+    public void onBindViewHolder(@NonNull final MyHolder_o_i_p holder, final int position) {
         holder.nomeTxt.setText(mPiatti.get(position).getNome());
         holder.tipoTxt.setText(mPiatti.get(position).getTipo());
         holder.prezzoTxt.setText(mPiatti.get(position).getPrezzo());
@@ -46,12 +50,33 @@ class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
-                Toast.makeText(c,mPiatti.get(position).getNome(),Toast.LENGTH_SHORT).show();
+
+
+
+                PopupMenu popupMenu = new PopupMenu(c, holder.nomeTxt);
+                popupMenu.inflate(R.menu.aggiungi_menu);
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+
+                        Sender_o_i_p s=new Sender_o_i_p(c, url, mTel, mPiatti.get(position).getNome(), mPiatti.get(position).getTipo(), mPiatti.get(position).getPrezzo(), mOrac);
+                        s.execute();
+
+                        return false;
+                    }
+                });
+                popupMenu.show();
+
+
+
+
+
+                /*Toast.makeText(c,mPiatti.get(position).getNome(),Toast.LENGTH_SHORT).show();
 
                 String url="http://spacecrafts.altervista.org/ScritturaDati/scrivi_carrello.php";
 
                 Sender_o_i_p s=new Sender_o_i_p(c, url, mTel, mPiatti.get(position).getNome(), mPiatti.get(position).getTipo(), mPiatti.get(position).getPrezzo(), mOrac);
-                s.execute();
+                s.execute();*/
             }
         });
     }

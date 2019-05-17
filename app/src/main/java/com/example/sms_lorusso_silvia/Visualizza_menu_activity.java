@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.example.sms_lorusso_silvia.mMySQL.Adapter_v_m;
 import com.example.sms_lorusso_silvia.mMySQL.Downloader_v_m;
 import com.example.sms_lorusso_silvia.mDataObject.Piatti;
 
@@ -14,6 +15,7 @@ public class Visualizza_menu_activity extends AppCompatActivity {
     //private static final String LOG_TAG = Visualizza_menu_activity.class.getSimpleName();
 
     String url="http://spacecrafts.altervista.org/LetturaDati/piatti.php";
+    Adapter_v_m adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class Visualizza_menu_activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rec_v_m);
+        recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 

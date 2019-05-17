@@ -14,7 +14,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 
-class Sender_r_o extends AsyncTask<Void,Void,String>{
+public class Sender_r_o extends AsyncTask<Void,Void,String>{
 
     Context c;
     String url;

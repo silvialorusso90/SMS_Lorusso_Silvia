@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chi sta usando l'applicazione?"
+        android:text="@string/chi_usa"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
         android:layout_marginLeft="150dp"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         android:layout_centerHorizontal="true"
-        android:text="Ristoratore"
+        android:text="@string/ristoratore"
         android:onClick="lanciaRistoratoreAxctivity"
         />
 
@@ -34,7 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
         android:onClick="lanciaClienteActivity"
-        android:text="Cliente" />
+        android:text="@string/cliente" />
 
 
 </RelativeLayout>

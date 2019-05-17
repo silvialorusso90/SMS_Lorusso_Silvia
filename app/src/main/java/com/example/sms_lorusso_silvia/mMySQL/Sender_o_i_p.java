@@ -14,7 +14,7 @@ import java.net.HttpURLConnection;
 
 import com.example.sms_lorusso_silvia.mDataObject.Carrello;
 
-class Sender_o_i_p extends AsyncTask<Void,Void,String> {
+public class Sender_o_i_p extends AsyncTask<Void,Void,String> {
 
     Context c;
     String url, tel, nomeP, tipoP, prezzoP, oraC;

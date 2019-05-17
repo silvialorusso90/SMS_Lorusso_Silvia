@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import com.example.sms_lorusso_silvia.R;
 import com.example.sms_lorusso_silvia.mDataObject.Piatti;
 
-class Adapter_v_m extends RecyclerView.Adapter<MyHolder_v_m>{
+public class Adapter_v_m extends RecyclerView.Adapter<MyHolder_v_m>{
 
     Context c;
     ArrayList<Piatti> mPiatti;

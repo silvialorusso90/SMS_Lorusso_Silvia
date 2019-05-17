@@ -14,7 +14,7 @@ import com.example.sms_lorusso_silvia.mDataObject.Piatti;
 
 import java.util.ArrayList;
 
-class Adapter_v_c extends RecyclerView.Adapter<MyHolder_v_c>{
+public class Adapter_v_c extends RecyclerView.Adapter<MyHolder_v_c>{
 
     Context c;
     ArrayList<Carrello> mCarrello;

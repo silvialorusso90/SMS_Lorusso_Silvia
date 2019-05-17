@@ -16,7 +16,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 
-class Parser_v_c extends AsyncTask<Void,Integer,Integer> {
+public class Parser_v_c extends AsyncTask<Void,Integer,Integer> {
 
     Context c;
     String jsonData;

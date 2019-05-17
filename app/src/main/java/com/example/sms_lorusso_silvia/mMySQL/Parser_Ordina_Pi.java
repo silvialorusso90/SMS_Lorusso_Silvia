@@ -14,7 +14,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-class Parser_Ordina_Pi extends AsyncTask<Void,Integer,Integer> {
+public class Parser_Ordina_Pi extends AsyncTask<Void,Integer,Integer> {
 
     Context c;
     String jsonData;
