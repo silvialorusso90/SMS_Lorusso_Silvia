@@ -19,14 +19,16 @@ public class Downloader_riepilogo extends AsyncTask<Void,Void,String> {
     String urlAddress;
     RecyclerView rv;
     String tel;
+    String orac;
 
     ProgressDialog pd;
 
-    public Downloader_riepilogo(Context c, String urlAddress, String tel, RecyclerView rv) {
+    public Downloader_riepilogo(Context c, String urlAddress, String tel, String orac, RecyclerView rv) {
         this.c = c;
         this.urlAddress = urlAddress;
         this.rv = rv;
         this.tel = tel;
+        this.orac = orac;
     }
 
     @Override
@@ -55,7 +57,7 @@ public class Downloader_riepilogo extends AsyncTask<Void,Void,String> {
         else {
 
             //CALL DATA PARSER
-            ParserRiepilogo parser = new ParserRiepilogo(c, s, rv);
+            ParserRiepilogo parser = new ParserRiepilogo(c, s, rv, orac);
             parser.execute();
         }
     }

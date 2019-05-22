@@ -25,7 +25,7 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        setTitle("Ordina");
+        //setTitle("Ordina");
 
         initUI();
 

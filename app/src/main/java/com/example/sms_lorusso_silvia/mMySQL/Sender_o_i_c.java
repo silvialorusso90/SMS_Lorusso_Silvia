@@ -88,16 +88,17 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
                 nomeTxt.setText("");
                 cognomeTxt.setText("");
 
+                intent();
+
             }
         }
+    }
 
+    private void intent() {
         Intent i = new Intent(c, Ordina_Ins_Piatto_Activity.class);
         i.putExtra("Telefono", telefonoTxt.getText().toString());
         i.putExtra("OraConsegna", oraconsegnaTxt.getText().toString());
         c.startActivity(i);
-
-
-
     }
 
     private String send() {

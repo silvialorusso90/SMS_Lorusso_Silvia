@@ -7,24 +7,13 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Rimuovi_Piatto_Activity"
-    tools:showIn="@layout/activity_rimuovi_pi">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/seleziona_piatto_da_rimuovere"
-        android:layout_marginLeft="10dp"
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_marginStart="10dp" />
+    tools:showIn="@layout/activity_rimuovi_pi"
+    android:background="@color/colorAccent">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rec_r_p"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textView"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingEnd="10dp"/>

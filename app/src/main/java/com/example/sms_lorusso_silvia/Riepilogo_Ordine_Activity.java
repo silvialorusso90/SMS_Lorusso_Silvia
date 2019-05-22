@@ -35,7 +35,7 @@ public class Riepilogo_Ordine_Activity extends AppCompatActivity {
         String urll = url+"?Telefono="+tel;
         //Toast.makeText(getApplicationContext(), urll, Toast.LENGTH_LONG).show();
 
-        new Downloader_riepilogo(this, urll, tel, recyclerView).execute();
+        new Downloader_riepilogo(this, urll, tel, orac, recyclerView).execute();
 
     }
 

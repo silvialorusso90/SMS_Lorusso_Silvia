@@ -22,11 +22,13 @@ public class AdapterRiepilogo extends RecyclerView.Adapter<MyHolderRiepilogo>{
     Context c;
     ArrayList<Carrello> mCarrello;
     LayoutInflater inflater;
+    String orac;
 
-    public AdapterRiepilogo(Context c, ArrayList<Carrello> carrello) {
+    public AdapterRiepilogo(Context c, ArrayList<Carrello> carrello, String orac) {
 
         this.c = c;
         this.mCarrello = carrello;
+        this.orac = orac;
 
         //INITIALIE
         inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -56,13 +58,13 @@ public class AdapterRiepilogo extends RecyclerView.Adapter<MyHolderRiepilogo>{
                     public boolean onMenuItemClick(MenuItem item) {
                         String tel = mCarrello.get(position).getTelefono();
                         String nome = mCarrello.get(position).getNomeP();
+                        String ora = orac;
 
                         //FAR PARTIRE DA QUI LA RIMOZIONE DEL PIATTO DAL DATABASE
-                        //final String urll = url+"?Telefono="+tel+"&Piatto="+nome;
                         final String urll = url+"?Telefono="+tel+"&Piatto="+nome;
                         Toast.makeText(c, urll, Toast.LENGTH_LONG).show();
 
-                        Sender_r_o s=new Sender_r_o(c, urll);
+                        Sender_r_o s=new Sender_r_o(c, urll, tel, ora);
                         s.execute();
                         return false;
                     }

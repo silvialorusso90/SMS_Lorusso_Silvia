@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/rel"
-    android:layout_above="@id/recycler">
+    android:layout_above="@id/recycler"
+    android:background="@color/colorAccent">
 
     <android.support.v7.widget.RecyclerView
         android:layout_marginTop="55dp"
@@ -13,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/button4"
+        android:background="@color/colorAccent"
         android:padding="10dp"/>
 
     <Button
@@ -22,5 +24,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/termina_ordine"
-        android:textSize="14sp" />
+        android:background="@color/color1"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>

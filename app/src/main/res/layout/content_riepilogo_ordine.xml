@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:id="@+id/relative"
     android:paddingTop="55dp"
-    android:layout_above="@id/textView">
+    android:layout_above="@id/textView"
+    android:background="@color/colorAccent">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +14,9 @@
         android:paddingTop="10dp"
         android:layout_marginLeft="20sp"
         android:text="@string/riepilogo_ordine"
-        android:textSize="14sp" />
+        android:fontFamily="@font/courgette"
+        android:textSize="16sp"
+        android:textColor="@color/color1" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_below="@id/textView"
@@ -32,8 +35,11 @@
         android:layout_marginLeft="20dp"
         android:onClick="Lanciapagaora"
         android:text="@string/paga_ora"
+        android:background="@color/color1"
         android:textSize="14sp"
-        android:layout_marginStart="10dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/button1"
@@ -44,7 +50,10 @@
         android:layout_marginRight="20dp"
         android:onClick="lanciapagadopo"
         android:text="@string/paga_alla_consegna"
+        android:background="@color/color1"
         android:textSize="14sp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp" />
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>

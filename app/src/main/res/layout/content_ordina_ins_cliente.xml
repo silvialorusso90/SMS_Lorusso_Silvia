@@ -7,6 +7,7 @@
     android:padding="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Ordina_Ins_Cliente_Activity"
+    android:background="@color/colorAccent"
     tools:showIn="@layout/activity_ordina__ins__cliente">
 
     <LinearLayout
@@ -20,9 +21,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/inserisci_i_tuoi_dati"
-            android:textSize="14sp" />
+            android:fontFamily="@font/courgette"
+            android:textSize="16sp"
+            android:textColor="@color/color1" />
 
         <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
             android:id="@+id/nomeU"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -84,11 +88,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:background="@color/colorAccent"
             android:clickable="true"
             android:text="@string/salva"
-            android:textColor="@android:color/white"
+            android:background="@color/color1"
             android:textSize="14sp"
+            android:textColor="@android:color/white"
             android:focusable="true" />
 
     </LinearLayout>

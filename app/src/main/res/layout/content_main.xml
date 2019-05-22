@@ -4,29 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sms_lorusso_silvia.MainActivity"
-    tools:showIn="@layout/activity_main">
+    android:background="@color/colorAccent"
+    tools:context=".Seconda_Activity"
+    tools:showIn="@layout/activity_seconda"
+    android:layout_marginTop="50dp">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/courgette"
+        android:text="@string/take_away"
+        android:textColor="@color/color1"
+        android:layout_centerHorizontal="true"
+        android:textSize="42sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/chef" />
+
+    <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="200dp"
-        android:text="@string/nome_app"
-
-        android:textSize="14sp"
-        android:layout_marginStart="150dp" />
+        android:layout_marginTop="320dp"
+        android:fontFamily="@font/courgette"
+        android:textSize="16sp"
+        android:textColor="@color/color1"
+        android:text="@string/chi_usa"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/button_main"
+        android:id="@+id/button"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
         android:layout_centerHorizontal="true"
+        android:background="@color/color1"
+        android:onClick="lanciaRistoratoreAxctivity"
+        android:text="@string/ristoratore"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="400dp"
-        android:onClick="launchSecondActivity"
-        android:text="@string/avanti"
-        android:textSize="14sp" />
-
-
+        android:background="@color/color1"
+        android:layout_centerHorizontal="true"
+        android:onClick="lanciaClienteActivity"
+        android:text="@string/cliente"
+        android:textColor="@android:color/white" />
 </RelativeLayout>

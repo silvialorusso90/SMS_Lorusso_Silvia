@@ -22,7 +22,7 @@ public class Paga_Activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        setTitle("Dati pagamento");
+        //setTitle("Dati pagamento");
 
         initUI();
 

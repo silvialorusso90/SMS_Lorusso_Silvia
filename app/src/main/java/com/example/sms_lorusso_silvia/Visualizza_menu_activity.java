@@ -12,7 +12,6 @@ import com.example.sms_lorusso_silvia.mMySQL.Downloader_v_m;
 import com.example.sms_lorusso_silvia.mDataObject.Piatti;
 
 public class Visualizza_menu_activity extends AppCompatActivity {
-    //private static final String LOG_TAG = Visualizza_menu_activity.class.getSimpleName();
 
     String url="http://spacecrafts.altervista.org/LetturaDati/piatti.php";
     Adapter_v_m adapter;

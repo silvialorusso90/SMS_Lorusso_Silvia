@@ -20,7 +20,7 @@ public class Visualizza_comande_activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        setTitle("Ordini: ");
+        //setTitle("Ordini: ");
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rec_v_c);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

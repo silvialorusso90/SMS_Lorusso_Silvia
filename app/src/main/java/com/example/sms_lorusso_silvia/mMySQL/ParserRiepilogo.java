@@ -19,14 +19,16 @@ public class ParserRiepilogo extends AsyncTask<Void,Void,Integer> {
     Context c;
     String jsonData;
     RecyclerView rv;
+    String orac;
 
     ProgressDialog pd;
     public ArrayList<Carrello> carrello =new ArrayList<>();
 
-    public ParserRiepilogo(Context c, String jsonData, RecyclerView rv) {
+    public ParserRiepilogo(Context c, String jsonData, RecyclerView rv, String orac) {
         this.c = c;
         this.jsonData = jsonData;
         this.rv = rv;
+        this.orac = orac;
     }
 
     @Override
@@ -54,7 +56,7 @@ public class ParserRiepilogo extends AsyncTask<Void,Void,Integer> {
             Toast.makeText(c,"Unable to parse",Toast.LENGTH_SHORT).show();
         }else {
             //CALL ADAPTER TO BIND DATA
-            AdapterRiepilogo adapter=new AdapterRiepilogo(c, carrello);
+            AdapterRiepilogo adapter=new AdapterRiepilogo(c, carrello, orac);
             rv.setAdapter(adapter);
         }
     }

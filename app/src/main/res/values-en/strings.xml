@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cognome">Surname</string>
+    <string name="mm_aaaa">mm/YYYY</string>
+    <string name="nome">Name</string>
+    <string name="nomee">Name:</string>
+    <string name="salva">Save</string>
+    <string name="tel">Tel</string>
+    <string name="telefono">Tel:</string>
+    <string name="chi_usa">who is using the app?</string>
+    <string name="ristoratore">Chef</string>
+    <string name="visualizza_menu">Show menu</string>
+    <string name="modifica_menu">Modify menu</string>
+    <string name="visualizza_comande">Show order</string>
+    <string name="aggiungi_piatto">Add dish</string>
+    <string name="rimuovi_piatto">Remove dish</string>
+    <string name="inserisci_i_dati_del_piatto">Insert dish</string>
+    <string name="ordina">Order</string>
+    <string name="inserisci_i_tuoi_dati">Insert your info</string>
+
+    <string name="ora_consegna">Delivery time: OO.MM</string>
+    <string name="termina_ordine">End order</string>
+    <string name="numero_carta">Card Number</string>
+    <string name="_0000_0000_0000_0000" translatable="false">0000 0000 0000 0000</string>
+    <string name="scadenza_carta">Expiry Date</string>
+    <string name="cvv" translatable="false">CVV</string>
+    <string name="n_cvv" translatable="false">000</string>
+    <string name="paga">pay</string>
+    <string name="il_pagamento_andato_a_buon_fine">Payment has been accepted</string>
+    <string name="grazie_per_averci_scelto">Thanks for your order</string>
+    <string name="a_dopo">See the next time</string>
+    <string name="riepilogo_ordine">Order Summary:</string>
+    <string name="paga_ora">Pay now</string>
+    <string name="paga_alla_consegna">Pay on delivery</string>
+    <string name="cliente">Customer</string>
+    <string name="piatto">Dish:</string>
+    <string name="piattoo">Dish</string>
+    <string name="oraa">Hour:</string>
+    <string name="ora">Hour</string>
+    <string name="nome_piatto">Dish name</string>
+    <string name="portata">Kind</string>
+    <string name="portataa">Kind:</string>
+    <string name="tipoo">Kind</string>
+    <string name="prezzoo">Price:</string>
+    <string name="prezzo">Price</string>
+    <string name="take_away">Take Away</string>
+    <string name="ordini">Order:</string>
+    <string name="dati_p">Payment data:</string>
+</resources>

@@ -1,10 +1,6 @@
 <resources>
-    <string name="app_name">SMS_Lorusso_Silvia</string>
-    <string name="nome_app">app ordini</string>
-    <string name="avanti">avanti</string>
     <string name="chi_usa">Chi sta usando l\'applicazione?</string>
     <string name="ristoratore">Ristoratore</string>
-    <string name="cosa">Cosa vuoi fare?</string>
     <string name="visualizza_menu">Visualizza menu</string>
     <string name="modifica_menu">Modifica menu</string>
     <string name="visualizza_comande">Visualizza comande</string>
@@ -12,7 +8,6 @@
     <string name="rimuovi_piatto">Rimuovi piatto</string>
     <string name="inserisci_i_dati_del_piatto">Inserisci i dati del piatto</string>
     <string name="salva">Salva</string>
-    <string name="seleziona_piatto_da_rimuovere">Seleziona piatto da rimuovere</string>
     <string name="telefono">Telefono:</string>
     <string name="ordina">Ordina</string>
     <string name="inserisci_i_tuoi_dati">Inserisci i tuoi dati</string>
@@ -20,15 +15,14 @@
     <string name="ora_consegna">Ora Consegna: OO.MM</string>
     <string name="termina_ordine">Termina ordine</string>
     <string name="numero_carta">Numero Carta</string>
-    <string name="_0000_0000_0000_0000">0000 0000 0000 0000</string>
+    <string name="_0000_0000_0000_0000" translatable="false">0000 0000 0000 0000</string>
     <string name="scadenza_carta">Scadenza Carta</string>
     <string name="mm_aaaa">mm/AAAA</string>
-    <string name="cvv">CVV</string>
-    <string name="n_cvv">000</string>
+    <string name="cvv" translatable="false">CVV</string>
+    <string name="n_cvv" translatable="false">000</string>
     <string name="paga">paga</string>
-    <string name="grazie_per_averci_scelto_a_dopo">grazie per averci scelto, a dopo!</string>
     <string name="il_pagamento_andato_a_buon_fine">il pagamento è andato a buon fine</string>
-    <string name="grazie_di_averci_scelto">grazie di averci scelto</string>
+    <string name="grazie_per_averci_scelto">Grazie per averci scelto</string>
     <string name="a_dopo">a dopo</string>
     <string name="riepilogo_ordine">Riepilogo ordine:</string>
     <string name="paga_ora">Paga ora</string>
@@ -47,4 +41,7 @@
     <string name="tipoo">Tipo</string>
     <string name="prezzoo">Prezzo:</string>
     <string name="prezzo">Prezzo</string>
+    <string name="take_away">Take Away</string>
+    <string name="ordini">Ordini:</string>
+    <string name="dati_p">Dati pagamento:</string>
 </resources>

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.example.sms_lorusso_silvia.Ordina_Ins_Piatto_Activity;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -18,13 +20,17 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
 
     Context c;
     String url;
+    String tel;
+    String ora;
     //String nome;
 
     ProgressDialog pd;
 
-    public Sender_r_o(Context c, String url) {
+    public Sender_r_o(Context c, String url, String tel, String ora) {
         this.c = c;
         this.url = url;
+        this.tel =tel;
+        this.ora = ora;
     }
 
     @Override
@@ -61,6 +67,8 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
             }else
             {
                 Toast.makeText(c,"Successfully Delete",Toast.LENGTH_SHORT).show();
+                intent();
+
             }
         }
     }
@@ -98,5 +106,12 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
         }
 
         return null;
+    }
+
+    private void intent() {
+        Intent i = new Intent(c, Ordina_Ins_Piatto_Activity.class);
+        i.putExtra("Telefono", tel);
+        i.putExtra("OraConsegna", ora);
+        c.startActivity(i);
     }
 }
