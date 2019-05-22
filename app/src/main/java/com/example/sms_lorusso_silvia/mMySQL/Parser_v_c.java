@@ -57,7 +57,7 @@ public class Parser_v_c extends AsyncTask<Void,Integer,Integer> {
             Toast.makeText(c,"Unable to parse",Toast.LENGTH_SHORT).show();
         }
         else {
-            //CALL ADAPTER TO BIND DATA
+            //ADAPTER
             Adapter_v_c adapter=new Adapter_v_c(c, carrello);
             rv.setAdapter(adapter);
         }

@@ -26,7 +26,7 @@ public class Adapter_r_p extends RecyclerView.Adapter<MyHolder_r_p>{
         this.c = c;
         this.mPiatti = mPiatti;
 
-        //INITIALIE
+        //INITIALIZZA
         inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -66,8 +66,6 @@ public class Adapter_r_p extends RecyclerView.Adapter<MyHolder_r_p>{
                     }
                 });
                 popupMenu.show();
-
-                //openPiattoActivity(mPiatti.get(position).getNome(), mPiatti.get(position).getTipo(), mPiatti.get(position).getPrezzo());
             }
         });
 
@@ -78,19 +76,5 @@ public class Adapter_r_p extends RecyclerView.Adapter<MyHolder_r_p>{
     public int getItemCount() {
         return mPiatti.size();
     }
-
-    /*
-    private void openPiattoActivity(String nomeP, String tipoP, String prezzoP){
-        Intent i = new Intent(c, DetailActivity.class);
-
-        //PACK DATA
-        i.putExtra("Nome", nomeP);
-        i.putExtra("Tipo", tipoP);
-        i.putExtra("Prezzo", prezzoP);
-
-        //OPEN ACTIVITY
-        c.startActivity(i);
-    }
-    */
 
 }

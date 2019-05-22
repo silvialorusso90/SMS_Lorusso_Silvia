@@ -76,7 +76,7 @@ public class Sender_a_pi extends AsyncTask<Void,Void,String> {
                 showDialog("Piatto salvato con successo", "Successo", android.R.drawable.ic_dialog_info);
                 //Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
 
-                //CLEAR UI
+                //PULISCI UI
                 nomeTxt.setText("");
                 tipoTxt.setText("");
                 prezzoTxt.setText("");
@@ -104,16 +104,17 @@ public class Sender_a_pi extends AsyncTask<Void,Void,String> {
 
             OutputStream os=con.getOutputStream();
 
-            //WRITE
+            //SCRIVI
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
             bw.write(new Packager_a_p(piatti).packData());
 
             bw.flush();
-            //RELEASE
+
+            //RILASCIA
             bw.close();
             os.close();
 
-            //SUCCESS OR NOT??
+            //SUCCESSO O NO??
             int responseCode=con.getResponseCode();
             if(responseCode==con.HTTP_OK)
             {

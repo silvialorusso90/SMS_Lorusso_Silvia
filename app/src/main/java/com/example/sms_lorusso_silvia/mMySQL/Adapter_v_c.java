@@ -24,7 +24,7 @@ public class Adapter_v_c extends RecyclerView.Adapter<MyHolder_v_c>{
         this.c = c;
         this.mCarrello = carrello;
 
-        //INITIALIE
+        //INITIALIZZA
         inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -44,12 +44,14 @@ public class Adapter_v_c extends RecyclerView.Adapter<MyHolder_v_c>{
         holder.prezzo.setText(mCarrello.get(position).getPrezzoP());
         holder.orac.setText(mCarrello.get(position).getOraC());
 
+
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
-                Toast.makeText(c,mCarrello.get(position).getNomeP(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(c,mCarrello.get(position).getNomeP(),Toast.LENGTH_SHORT).show();
             }
         });
+
 
     }
 

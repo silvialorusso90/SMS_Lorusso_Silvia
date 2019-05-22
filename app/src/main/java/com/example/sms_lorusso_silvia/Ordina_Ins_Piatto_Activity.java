@@ -37,7 +37,7 @@ public class Ordina_Ins_Piatto_Activity extends AppCompatActivity {
         final String orac = extras.getString("OraConsegna");
         setTitle("Tel: "+tel+" OraC: "+orac);
 
-        Toast.makeText(this, orac, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, orac, Toast.LENGTH_SHORT).show();
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

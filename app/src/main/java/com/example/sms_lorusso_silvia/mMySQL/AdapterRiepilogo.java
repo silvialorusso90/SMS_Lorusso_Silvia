@@ -30,7 +30,7 @@ public class AdapterRiepilogo extends RecyclerView.Adapter<MyHolderRiepilogo>{
         this.mCarrello = carrello;
         this.orac = orac;
 
-        //INITIALIE
+        //INITIALIZZA
         inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -50,7 +50,7 @@ public class AdapterRiepilogo extends RecyclerView.Adapter<MyHolderRiepilogo>{
             @Override
             public void onItemClick(final int pos) {
 
-                //Display option menu
+                //POPUP MENU
                 PopupMenu popupMenu = new PopupMenu(c, holder.nomeTxt);
                 popupMenu.inflate(R.menu.rimuovi_menu);
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -60,9 +60,9 @@ public class AdapterRiepilogo extends RecyclerView.Adapter<MyHolderRiepilogo>{
                         String nome = mCarrello.get(position).getNomeP();
                         String ora = orac;
 
-                        //FAR PARTIRE DA QUI LA RIMOZIONE DEL PIATTO DAL DATABASE
+                        //RIMOZIONE DEL PIATTO DAL DATABASE
                         final String urll = url+"?Telefono="+tel+"&Piatto="+nome;
-                        Toast.makeText(c, urll, Toast.LENGTH_LONG).show();
+                        //Toast.makeText(c, urll, Toast.LENGTH_LONG).show();
 
                         Sender_r_o s=new Sender_r_o(c, urll, tel, ora);
                         s.execute();

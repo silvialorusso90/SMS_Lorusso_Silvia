@@ -56,7 +56,7 @@ public class Downloader_Ordina_Pi extends AsyncTask<Void,Void,String>{
         }
         else {
 
-            //CALL DATA PARSER
+            //PARSER
             Parser_Ordina_Pi parser = new Parser_Ordina_Pi(c, s, rv, tel, oraC);
             parser.execute();
         }

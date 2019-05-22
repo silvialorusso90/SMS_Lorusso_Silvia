@@ -17,7 +17,7 @@ public class ConnectorP {
             URL url=new URL(urlAddress);
             HttpURLConnection con= (HttpURLConnection) url.openConnection();
 
-            //SET PROPS
+            //SET PROPRIETA'
             con.setRequestMethod("POST");
             con.setConnectTimeout(20000);
             con.setReadTimeout(20000);

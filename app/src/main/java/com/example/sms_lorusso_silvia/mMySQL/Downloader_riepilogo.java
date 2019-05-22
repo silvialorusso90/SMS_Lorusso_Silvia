@@ -56,7 +56,7 @@ public class Downloader_riepilogo extends AsyncTask<Void,Void,String> {
         }
         else {
 
-            //CALL DATA PARSER
+            //PARSER
             ParserRiepilogo parser = new ParserRiepilogo(c, s, rv, orac);
             parser.execute();
         }

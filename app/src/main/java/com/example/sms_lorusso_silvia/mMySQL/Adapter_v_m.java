@@ -23,7 +23,7 @@ public class Adapter_v_m extends RecyclerView.Adapter<MyHolder_v_m>{
         this.c = c;
         this.mPiatti = piatti;
 
-        //INITIALIE
+        //INITIALIZZA
         inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -41,12 +41,14 @@ public class Adapter_v_m extends RecyclerView.Adapter<MyHolder_v_m>{
         holder.tipo.setText(mPiatti.get(position).getTipo());
         holder.prezzo.setText(mPiatti.get(position).getPrezzo());
 
+
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
-                Toast.makeText(c,mPiatti.get(position).getNome(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(c,mPiatti.get(position).getNome(),Toast.LENGTH_SHORT).show();
             }
         });
+
 
     }
 

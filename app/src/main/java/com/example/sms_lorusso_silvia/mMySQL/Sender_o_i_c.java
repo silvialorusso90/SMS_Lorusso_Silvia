@@ -81,10 +81,10 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
                 Toast.makeText(c,"Unsuccessful,Bad Response returned",Toast.LENGTH_SHORT).show();
             }
             else {
-                Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
                 showDialog("Utente salvato con successo", "Successo", android.R.drawable.ic_dialog_info);
 
-                //CLEAR UI
+                //SVUOTA UI
                 nomeTxt.setText("");
                 cognomeTxt.setText("");
 
@@ -110,16 +110,17 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
 
             OutputStream os=con.getOutputStream();
 
-            //WRITE
+            //SCRIVI
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
             bw.write(new Packager_o_i_c(utenti).packData());
 
             bw.flush();
-            //RELEASE
+
+            //RILASCIA
             bw.close();
             os.close();
 
-            //SUCCESS OR NOT??
+            //SUCCESO O NO??
             int responseCode=con.getResponseCode();
             if(responseCode==con.HTTP_OK)
             {

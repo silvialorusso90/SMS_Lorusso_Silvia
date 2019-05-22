@@ -44,4 +44,5 @@
     <string name="take_away">Take Away</string>
     <string name="ordini">Ordini:</string>
     <string name="dati_p">Dati pagamento:</string>
+    <string name="app_name">Take Away</string>
 </resources>

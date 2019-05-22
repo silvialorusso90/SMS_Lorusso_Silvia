@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sms_lorusso_silvia">
+    package="com.example.sms_lorusso_silvia" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icona"
-        android:label=""
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/icona_c"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
@@ -29,7 +29,8 @@
             android:label="@string/ordini" />
         <activity android:name=".Cliente_Activity" />
         <activity android:name=".RistoratoreActivity" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity"
+            android:theme="@style/FullScreen">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />

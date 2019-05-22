@@ -17,4 +17,13 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="FullScreen" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/color1</item>
+        <item name="colorPrimaryDark">@color/color1D</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 </resources>

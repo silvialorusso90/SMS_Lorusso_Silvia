@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="80dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:background="@color/colorAccent">
 
     <TextView
@@ -10,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="@string/numero_carta"
         android:textSize="14sp"
         android:layout_marginStart="10dp" />
@@ -102,7 +104,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="350dp"
         android:clickable="true"
         android:background="@color/color1"
         android:textColor="@android:color/white"

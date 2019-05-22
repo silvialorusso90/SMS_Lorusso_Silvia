@@ -31,7 +31,7 @@ public class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
         this.mTel = tel;
         this.mOrac = orac;
 
-        //INITIALIE
+        //INITIALIZZA
         inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -50,9 +50,6 @@ public class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
-
-
-
                 PopupMenu popupMenu = new PopupMenu(c, holder.nomeTxt);
                 popupMenu.inflate(R.menu.aggiungi_menu);
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -66,17 +63,6 @@ public class Adapter_Ordina_Pi extends RecyclerView.Adapter<MyHolder_o_i_p>{
                     }
                 });
                 popupMenu.show();
-
-
-
-
-
-                /*Toast.makeText(c,mPiatti.get(position).getNome(),Toast.LENGTH_SHORT).show();
-
-                String url="http://spacecrafts.altervista.org/ScritturaDati/scrivi_carrello.php";
-
-                Sender_o_i_p s=new Sender_o_i_p(c, url, mTel, mPiatti.get(position).getNome(), mPiatti.get(position).getTipo(), mPiatti.get(position).getPrezzo(), mOrac);
-                s.execute();*/
             }
         });
     }

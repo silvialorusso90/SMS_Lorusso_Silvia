@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 
 import com.example.sms_lorusso_silvia.RistoratoreActivity;
@@ -63,7 +64,8 @@ public class Sender_r_pi extends AsyncTask<Void,Void,String> {
 
             }else
             {
-                Toast.makeText(c,"Successfully Delete",Toast.LENGTH_SHORT).show();
+                showDialog("Piatto salvato con successo", "Successo", android.R.drawable.ic_dialog_info);
+                //Toast.makeText(c,"Successfully Delete",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(c, RistoratoreActivity.class);
                 c.startActivity(i);
             }
@@ -80,17 +82,9 @@ public class Sender_r_pi extends AsyncTask<Void,Void,String> {
         try {
 
             OutputStream os=con.getOutputStream();
-
-            //WRITE
-            //BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
-            //bw.write(new Packager_a_p(piatti).packData());
-
-            //bw.flush();
-            //RELEASE
-            //bw.close();
             os.close();
 
-            //SUCCESS OR NOT??
+            //SUCCESSO O NO??
             int responseCode=con.getResponseCode();
             if(responseCode==con.HTTP_OK)
             {
@@ -115,4 +109,14 @@ public class Sender_r_pi extends AsyncTask<Void,Void,String> {
 
         return null;
     }
+
+    private void showDialog(String message, String title, int icon){
+        new AlertDialog.Builder(c)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok,null)
+                .setIcon(icon)
+                .show();
+    }
+
 }

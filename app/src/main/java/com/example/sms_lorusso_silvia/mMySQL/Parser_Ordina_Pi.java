@@ -61,7 +61,7 @@ public class Parser_Ordina_Pi extends AsyncTask<Void,Integer,Integer> {
         }
         else {
 
-            //BIND DATA USING ADAPTER
+            //ADAPTER
             Adapter_Ordina_Pi adapter = new Adapter_Ordina_Pi(c, piatti, tel, orac);
             rv.setAdapter(adapter);
         }

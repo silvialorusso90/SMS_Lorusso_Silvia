@@ -55,7 +55,7 @@ public class ParserRiepilogo extends AsyncTask<Void,Void,Integer> {
         {
             Toast.makeText(c,"Unable to parse",Toast.LENGTH_SHORT).show();
         }else {
-            //CALL ADAPTER TO BIND DATA
+            //ADAPTER
             AdapterRiepilogo adapter=new AdapterRiepilogo(c, carrello, orac);
             rv.setAdapter(adapter);
         }

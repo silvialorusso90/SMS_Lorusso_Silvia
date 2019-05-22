@@ -3,6 +3,7 @@ package com.example.sms_lorusso_silvia.mMySQL;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -70,7 +71,8 @@ public class Sender_o_i_p extends AsyncTask<Void,Void,String> {
                 Toast.makeText(c,"Unsuccessful,Bad Response returned",Toast.LENGTH_SHORT).show();
             }
             else {
-                Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
+                showDialog("Piatto salvato con successo", "Successo", android.R.drawable.ic_dialog_info);
 
             }
         }
@@ -86,16 +88,17 @@ public class Sender_o_i_p extends AsyncTask<Void,Void,String> {
 
             OutputStream os=con.getOutputStream();
 
-            //WRITE
+            //SCRIVI
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
             bw.write(new Packager_o_i_p(carrello).packData());
 
             bw.flush();
-            //RELEASE
+
+            //RILASCIA
             bw.close();
             os.close();
 
-            //SUCCESS OR NOT??
+            //SUCCESSO O NO??
             int responseCode=con.getResponseCode();
             if(responseCode==con.HTTP_OK)
             {
@@ -119,5 +122,14 @@ public class Sender_o_i_p extends AsyncTask<Void,Void,String> {
         }
 
         return null;
+    }
+
+    private void showDialog(String message, String title, int icon){
+        new AlertDialog.Builder(c)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok,null)
+                .setIcon(icon)
+                .show();
     }
 }

@@ -20,8 +20,8 @@ public class Rimuovi_Piatto_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rimuovi_pi);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rec_r_p);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

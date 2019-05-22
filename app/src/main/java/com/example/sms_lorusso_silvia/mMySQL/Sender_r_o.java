@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 
 import com.example.sms_lorusso_silvia.Ordina_Ins_Piatto_Activity;
@@ -66,7 +67,8 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
 
             }else
             {
-                Toast.makeText(c,"Successfully Delete",Toast.LENGTH_SHORT).show();
+                showDialog("Piatto rimosso con successo", "Successo", android.R.drawable.ic_dialog_info);
+                //Toast.makeText(c,"Successfully Delete",Toast.LENGTH_SHORT).show();
                 intent();
 
             }
@@ -82,7 +84,7 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
         }
         try {
 
-            //SUCCESS OR NOT??
+            //SUCCESSO O NO??
             int responseCode=con.getResponseCode();
             if(responseCode==con.HTTP_OK)
             {
@@ -113,5 +115,14 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
         i.putExtra("Telefono", tel);
         i.putExtra("OraConsegna", ora);
         c.startActivity(i);
+    }
+
+    private void showDialog(String message, String title, int icon){
+        new AlertDialog.Builder(c)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok,null)
+                .setIcon(icon)
+                .show();
     }
 }

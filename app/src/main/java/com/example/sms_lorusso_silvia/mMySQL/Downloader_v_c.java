@@ -54,7 +54,7 @@ public class Downloader_v_c extends AsyncTask<Void,Void,String>{
         }
         else {
 
-            //CALL DATA PARSER
+            //PARSER
             Parser_v_c parser = new Parser_v_c(c, s, rv);
             parser.execute();
         }
