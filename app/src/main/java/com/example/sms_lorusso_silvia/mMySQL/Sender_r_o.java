@@ -2,6 +2,7 @@ package com.example.sms_lorusso_silvia.mMySQL;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
@@ -69,7 +70,7 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
             {
                 showDialog("Piatto rimosso con successo", "Successo", android.R.drawable.ic_dialog_info);
                 //Toast.makeText(c,"Successfully Delete",Toast.LENGTH_SHORT).show();
-                intent();
+                //intent();
 
             }
         }
@@ -121,7 +122,12 @@ public class Sender_r_o extends AsyncTask<Void,Void,String>{
         new AlertDialog.Builder(c)
                 .setTitle(title)
                 .setMessage(message)
-                .setPositiveButton(android.R.string.ok,null)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        intent();
+                    }
+                })
                 .setIcon(icon)
                 .show();
     }

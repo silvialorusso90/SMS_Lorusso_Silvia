@@ -11,19 +11,19 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="20dp"
         android:layout_marginLeft="20sp"
         android:text="@string/riepilogo_ordine"
         android:fontFamily="@font/courgette"
         android:textSize="16sp"
-        android:textColor="@color/color1" />
+        android:textColor="@color/color1"
+        />
 
     <android.support.v7.widget.RecyclerView
         android:layout_below="@id/textView"
         android:id="@+id/recy"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/button"
         android:padding="10dp"
         />
 

@@ -46,4 +46,6 @@
     <string name="take_away">Take Away</string>
     <string name="ordini">Order:</string>
     <string name="dati_p">Payment data:</string>
+    <string name="aggiungi">Add</string>
+    <string name="rimuovi">Remove</string>
 </resources>

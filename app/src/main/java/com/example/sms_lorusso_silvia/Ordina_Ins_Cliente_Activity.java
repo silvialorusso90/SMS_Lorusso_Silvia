@@ -1,5 +1,6 @@
 package com.example.sms_lorusso_silvia;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -112,7 +113,7 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle(title)
                 .setMessage(message)
-                .setPositiveButton(android.R.string.ok,null)
+                .setPositiveButton(android.R.string.ok, null)
                 .setIcon(icon)
                 .show();
     }

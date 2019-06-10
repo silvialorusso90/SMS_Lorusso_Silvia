@@ -2,6 +2,7 @@ package com.example.sms_lorusso_silvia.mMySQL;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
@@ -128,7 +129,12 @@ public class Sender_o_i_p extends AsyncTask<Void,Void,String> {
         new AlertDialog.Builder(c)
                 .setTitle(title)
                 .setMessage(message)
-                .setPositiveButton(android.R.string.ok,null)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
                 .setIcon(icon)
                 .show();
     }
