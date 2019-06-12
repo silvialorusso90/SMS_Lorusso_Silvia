@@ -35,7 +35,7 @@ public class Ordina_Ins_Piatto_Activity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         final String tel = extras.getString("Telefono");
         final String orac = extras.getString("OraConsegna");
-        setTitle("Tel: "+tel+" OraC: "+orac);
+        setTitle("Tel: "+tel+"   OraC: "+orac);
 
         //Toast.makeText(this, orac, Toast.LENGTH_SHORT).show();
 
