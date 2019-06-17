@@ -1,28 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
 
-    android:fitsSystemWindows="true"
-    tools:context="com.example.sms_lorusso_silvia.MainActivity">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/courgette"
+        android:text="@string/take_away"
+        android:textColor="@color/color1"
+        android:layout_centerHorizontal="true"
+        android:textSize="42sp" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.NoActionBar" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/chef" />
 
-    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/courgette"
+        android:textSize="16sp"
+        android:textColor="@color/color1"
+        android:text="@string/chi_usa"
+        android:textAllCaps="false" />
 
-    <include layout="@layout/content_main" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color1"
+        android:onClick="lanciaRistoratoreAxctivity"
+        android:text="@string/ristoratore"
+        android:textColor="@android:color/white" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="5sp"
+        android:background="@color/color1"
+        android:layout_centerHorizontal="true"
+        android:onClick="lanciaClienteActivity"
+        android:text="@string/cliente"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
