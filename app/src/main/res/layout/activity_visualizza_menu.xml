@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Visualizza_comande_activity"
+    tools:showIn="@layout/activity_visualizza_menu"
+    android:background="@color/colorAccent">
 
-    android:fitsSystemWindows="true"
-    tools:context=".Visualizza_menu_activity">
-
-    <android.support.design.widget.AppBarLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_v_m"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.NoActionBar" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_visualizza_menu" />
-
-</android.support.design.widget.CoordinatorLayout>
+        android:layout_height="match_parent"
+        android:padding="10dp"/>
+</RelativeLayout>

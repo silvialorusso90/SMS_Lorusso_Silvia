@@ -13,8 +13,6 @@ public class Pagato_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagato);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         a = (TextView)findViewById(R.id.textView4);
         b = (TextView)findViewById(R.id.textView5);

@@ -20,8 +20,6 @@ public class Riepilogo_Ordine_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riepilogo__ordine);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         Bundle extras = getIntent().getExtras();
         final String tel = extras.getString("Telefono");

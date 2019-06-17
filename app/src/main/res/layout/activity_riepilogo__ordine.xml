@@ -1,28 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relative"
+    android:paddingTop="55dp"
+    android:layout_above="@id/textView"
+    android:background="@color/colorAccent">
 
-    android:fitsSystemWindows="true"
-    tools:context=".Riepilogo_Ordine_Activity">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20sp"
+        android:text="@string/riepilogo_ordine"
+        android:fontFamily="@font/courgette"
+        android:textSize="16sp"
+        android:textColor="@color/color1"
+        />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.NoActionBar" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:layout_above="@id/button"
+        android:padding="10dp" />
 
-    </android.support.design.widget.AppBarLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="Lanciapagaora"
+        android:text="@string/paga_ora"
+        android:background="@color/color1"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        />
 
-    <include layout="@layout/content_riepilogo_ordine" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:onClick="lanciapagadopo"
+        android:text="@string/paga_alla_consegna"
+        android:background="@color/color1"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true" />
 
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
