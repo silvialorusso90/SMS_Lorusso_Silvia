@@ -24,17 +24,11 @@ public class Aggiungi_Piatto_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aggiungi_pi);
 
+        setTitle("");
+
         //INITIALIE VIEW
         initUI();
 
-        /*
-        saveBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Sender_a_pi s=new Sender_a_pi(Aggiungi_Piatto_Activity.this, url, nomeTxt, tipoTxt, prezzoTxt);
-                s.execute();
-            }
-        });*/
     }
 
     private void initUI() {

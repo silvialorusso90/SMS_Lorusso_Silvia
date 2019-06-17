@@ -9,6 +9,7 @@
     android:background="@color/colorAccent">
 
     <TextView
+        android:id="@+id/txtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -20,9 +21,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_below="@id/txtView"
+        android:layout_marginTop="20sp"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/rist"  />
 
@@ -31,7 +33,8 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="80sp"
         android:background="@color/color1"
         android:onClick="lanciaVisualizzaMenu"
         android:text="@string/visualizza_menu"
@@ -42,7 +45,8 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="5sp"
         android:onClick="lanciaModificaMenu"
         android:background="@color/color1"
         android:textColor="@android:color/white"
@@ -53,7 +57,8 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="450dp"
+        android:layout_below="@id/button1"
+        android:layout_marginTop="5sp"
         android:onClick="lanciaVisualizzaComande"
         android:background="@color/color1"
         android:textColor="@android:color/white"

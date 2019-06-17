@@ -14,6 +14,8 @@ public class Pagadopo_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagadopo_);
 
+        setTitle("");
+
         a = (TextView) findViewById(R.id.textView7);
     }
 }

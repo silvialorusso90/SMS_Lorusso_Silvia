@@ -13,6 +13,8 @@ public class RistoratoreActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ristoratore);
+
+        setTitle("");
     }
 
     public void lanciaVisualizzaMenu(View view) {

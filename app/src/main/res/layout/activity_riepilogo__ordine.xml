@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/relative"
-    android:paddingTop="55dp"
     android:layout_above="@id/textView"
     android:background="@color/colorAccent">
 
