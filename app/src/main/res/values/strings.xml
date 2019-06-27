@@ -47,4 +47,5 @@
     <string name="app_name">Take Away</string>
     <string name="aggiungi">Aggiungi</string>
     <string name="rimuovi">Rimuovi</string>
+    <string name="home">Home</string>
 </resources>

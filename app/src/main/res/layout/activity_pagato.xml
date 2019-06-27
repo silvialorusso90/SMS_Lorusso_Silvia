@@ -38,4 +38,16 @@
         android:textColor="@color/colorPrimary"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20sp"/>
+
+    <Button
+        android:id="@+id/btnH"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:clickable="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/home"
+        android:textSize="14sp" />
 </RelativeLayout>
