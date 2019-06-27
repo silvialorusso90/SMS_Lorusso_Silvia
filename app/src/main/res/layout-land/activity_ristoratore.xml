@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RistoratoreActivity"
     tools:showIn="@layout/activity_ristoratore"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <TextView
         android:id="@+id/txtView"
@@ -17,7 +17,7 @@
         android:layout_marginTop="20sp"
         android:textSize="36sp"
         android:fontFamily="@font/courgette"
-        android:textColor="@color/color1" />
+        android:textColor="@color/colorPrimary" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="430sp"
         android:layout_marginTop="130sp"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:onClick="lanciaVisualizzaMenu"
         android:text="@string/visualizza_menu"
         android:textColor="@android:color/white" />
@@ -46,7 +46,7 @@
         android:layout_below="@id/button"
         android:layout_marginTop="5sp"
         android:onClick="lanciaModificaMenu"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="@string/modifica_menu" />
 
@@ -58,7 +58,7 @@
         android:layout_marginLeft="430sp"
         android:layout_marginTop="5sp"
         android:onClick="lanciaVisualizzaComande"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="@string/visualizza_comande" />
 

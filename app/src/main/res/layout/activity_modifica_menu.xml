@@ -8,7 +8,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Modifica_menu_activity"
     tools:showIn="@layout/activity_modifica_menu"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,7 +27,7 @@
         android:layout_below="@id/imageView"
         android:onClick="lanciaAggiungiPiatto"
         android:text="@string/aggiungi_piatto"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
@@ -39,7 +39,7 @@
         android:layout_below="@id/button1"
         android:layout_marginTop="5sp"
         android:onClick="lanciaRimuoviPiatto"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="@string/rimuovi_piatto"
         android:textSize="14sp" />

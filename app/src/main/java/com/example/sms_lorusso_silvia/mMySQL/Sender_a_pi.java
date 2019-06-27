@@ -2,6 +2,7 @@ package com.example.sms_lorusso_silvia.mMySQL;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.EditText;
@@ -81,7 +82,7 @@ public class Sender_a_pi extends AsyncTask<Void,Void,String> {
                 tipoTxt.setText("");
                 prezzoTxt.setText("");
 
-                intent();
+                //intent();
 
 
             }
@@ -144,7 +145,12 @@ public class Sender_a_pi extends AsyncTask<Void,Void,String> {
         new AlertDialog.Builder(c)
                 .setTitle(title)
                 .setMessage(message)
-                .setPositiveButton(android.R.string.ok,null)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        intent();
+                    }
+                })
                 .setIcon(icon)
                 .show();
     }

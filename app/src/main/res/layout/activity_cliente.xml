@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <TextView
         android:id="@+id/txt"
@@ -14,7 +14,7 @@
         android:text="@string/cliente"
         android:fontFamily="@font/courgette"
         android:textSize="36sp"
-        android:textColor="@color/color1" />
+        android:textColor="@color/colorPrimary" />
 
     <ImageView
         android:layout_below="@id/txt"
@@ -33,7 +33,7 @@
         android:layout_marginTop="450dp"
         android:textColor="@android:color/white"
         android:textSize="14sp"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:onClick="lanciaOrdineCliente"
         android:text="@string/ordina"
         />

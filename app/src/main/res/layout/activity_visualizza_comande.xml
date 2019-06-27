@@ -7,12 +7,11 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Visualizza_comande_activity"
-    tools:showIn="@layout/activity_visualizza_comande"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rec_v_c"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp"/>
+        android:padding="5dp"/>
 </RelativeLayout>

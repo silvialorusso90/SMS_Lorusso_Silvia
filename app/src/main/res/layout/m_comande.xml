@@ -4,7 +4,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="10dp"
+    android:layout_margin="7dp"
     card_view:cardCornerRadius="5dp"
     card_view:cardElevation="5dp"
     android:layout_height="wrap_content"
@@ -14,7 +14,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/TextView1"
@@ -24,8 +25,9 @@
             android:layout_marginLeft="2dp"
             android:padding="5dp"
             android:text="@string/telefono"
+            android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/color1"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="2dp" />
@@ -51,8 +53,9 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="2dp"
             android:padding="5dp"
+            android:textStyle="bold"
             android:text="@string/piatto"
-            android:textColor="@color/color1"
+            android:textColor="@color/colorPrimary"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="14sp"
             android:layout_alignParentStart="true"
@@ -80,9 +83,10 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="2dp"
             android:padding="5dp"
+            android:textStyle="bold"
             android:text="@string/portataa"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/color1"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="2dp" />
@@ -109,9 +113,10 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="2dp"
             android:padding="5dp"
+            android:textStyle="bold"
             android:text="@string/prezzoo"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/color1"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="2dp" />
@@ -139,8 +144,9 @@
             android:layout_marginLeft="2dp"
             android:padding="5dp"
             android:text="@string/oraa"
+            android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/color1"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="2dp" />

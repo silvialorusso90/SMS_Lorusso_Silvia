@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <TextView
         android:id="@+id/textView7"
@@ -13,5 +13,5 @@
         android:text="@string/grazie_per_averci_scelto"
         android:fontFamily="@font/courgette"
         android:textSize="24sp"
-        android:textColor="@color/color1"/>
+        android:textColor="@color/colorPrimary"/>
 </RelativeLayout>

@@ -22,7 +22,9 @@ public class Visualizza_menu_activity extends AppCompatActivity {
         setContentView(R.layout.activity_visualizza_menu);
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rec_v_m);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 

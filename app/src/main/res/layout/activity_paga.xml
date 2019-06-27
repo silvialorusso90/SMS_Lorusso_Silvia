@@ -5,7 +5,7 @@
     android:paddingTop="80dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <TextView
         android:id="@+id/textView1"
@@ -106,7 +106,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
         android:clickable="true"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="@string/paga"
         android:textSize="14sp" />

@@ -73,7 +73,7 @@ public class Sender_o_i_p extends AsyncTask<Void,Void,String> {
             }
             else {
                 //Toast.makeText(c,"Successfully Saved",Toast.LENGTH_SHORT).show();
-                showDialog("Piatto salvato con successo", "Successo", android.R.drawable.ic_dialog_info);
+                showDialog("Piatto aggiunto al carrello", "Successo", android.R.drawable.ic_dialog_info);
 
             }
         }

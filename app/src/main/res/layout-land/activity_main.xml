@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/color"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginTop="20sp"
         android:fontFamily="@font/courgette"
         android:text="@string/take_away"
-        android:textColor="@color/color1"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:textSize="42sp" />
 
@@ -34,7 +34,7 @@
         android:layout_marginLeft="400sp"
         android:fontFamily="@font/courgette"
         android:text="@string/chi_usa"
-        android:textColor="@color/color1"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp" />
 
     <Button
@@ -44,7 +44,7 @@
         android:layout_below="@id/text"
         android:layout_marginLeft="430sp"
         android:layout_marginTop="10sp"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:onClick="lanciaRistoratoreAxctivity"
         android:text="@string/ristoratore"
         android:textColor="@android:color/white" />
@@ -56,7 +56,7 @@
         android:layout_below="@id/button"
         android:layout_marginLeft="430sp"
         android:layout_marginTop="5sp"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:onClick="lanciaClienteActivity"
         android:text="@string/cliente"
         android:textColor="@android:color/white" />

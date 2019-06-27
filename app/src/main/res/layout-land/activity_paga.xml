@@ -5,7 +5,7 @@
     android:paddingTop="20dp"
     android:paddingLeft="60dp"
     android:paddingRight="60dp"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <TextView
         android:id="@+id/textView1"
@@ -106,7 +106,7 @@
         android:layout_marginTop="50dp"
         android:layout_below="@id/cvvCarta"
         android:clickable="true"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:text="@string/paga"
         android:textSize="14sp" />

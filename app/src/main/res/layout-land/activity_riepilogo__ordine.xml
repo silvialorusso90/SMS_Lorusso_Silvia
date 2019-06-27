@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:id="@+id/relative"
     android:layout_above="@id/textView"
-    android:background="@color/colorAccent">
+    android:background="@color/color">
 
     <TextView
         android:id="@+id/textView"
@@ -14,7 +14,7 @@
         android:text="@string/riepilogo_ordine"
         android:fontFamily="@font/courgette"
         android:textSize="16sp"
-        android:textColor="@color/color1"
+        android:textColor="@color/colorPrimary"
         />
 
     <android.support.v7.widget.RecyclerView
@@ -34,7 +34,7 @@
         android:layout_marginLeft="160dp"
         android:onClick="Lanciapagaora"
         android:text="@string/paga_ora"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textSize="14sp"
         android:textColor="@android:color/white"
         />
@@ -47,7 +47,7 @@
         android:layout_marginRight="160dp"
         android:onClick="lanciapagadopo"
         android:text="@string/paga_alla_consegna"
-        android:background="@color/color1"
+        android:background="@color/colorPrimary"
         android:textSize="14sp"
         android:textColor="@android:color/white"
         android:layout_alignParentRight="true"
