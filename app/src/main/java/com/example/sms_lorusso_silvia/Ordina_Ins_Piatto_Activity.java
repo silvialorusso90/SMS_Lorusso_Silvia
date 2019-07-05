@@ -29,6 +29,8 @@ public class Ordina_Ins_Piatto_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ordina__ins__piatto_);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         Bundle extras = getIntent().getExtras();
         final String tel = extras.getString("Telefono");

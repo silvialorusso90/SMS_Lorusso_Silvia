@@ -2,10 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="80dp"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/dati_p"/>
+
 
     <TextView
         android:id="@+id/textView1"
@@ -14,11 +23,13 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:text="@string/numero_carta"
+        android:layout_below="@id/toolbar"
         android:textSize="14sp"
         android:layout_marginStart="10dp" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/nCarta"
+        android:layout_below="@id/toolbar"
         android:layout_marginLeft="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,6 +42,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:hint="@string/_0000_0000_0000_0000"
+            android:inputType="number"
             android:singleLine="true"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
@@ -61,6 +73,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:hint="@string/mm_aaaa"
+            android:inputType="date"
             android:singleLine="true"
             android:textSize="14sp"
             android:layout_marginStart="20dp"
@@ -93,6 +106,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:hint="@string/n_cvv"
+            android:inputType="number"
             android:singleLine="true"
             android:textSize="14sp"
             android:layout_marginStart="20dp"

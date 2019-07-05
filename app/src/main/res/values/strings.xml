@@ -12,7 +12,7 @@
     <string name="ordina">Ordina</string>
     <string name="inserisci_i_tuoi_dati">Inserisci i tuoi dati</string>
     <string name="cognome">Cognome</string>
-    <string name="ora_consegna">Ora Consegna: OO.MM</string>
+    <string name="ora_consegna">Ora Consegna: OO:MM</string>
     <string name="termina_ordine">Termina ordine</string>
     <string name="numero_carta">Numero Carta</string>
     <string name="_0000_0000_0000_0000" translatable="false">0000 0000 0000 0000</string>

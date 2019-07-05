@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/icona_c"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".Pagadopo_Activity"
             ></activity>
         <activity android:name=".Pagato_Activity"

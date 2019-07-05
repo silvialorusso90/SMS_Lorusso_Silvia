@@ -10,11 +10,21 @@
     tools:showIn="@layout/activity_modifica_menu"
     android:background="@color/color">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300sp"
         android:layout_height="300sp"
         android:layout_marginTop="80sp"
+        android:layout_below="@id/toolbar"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/menu"  />
 

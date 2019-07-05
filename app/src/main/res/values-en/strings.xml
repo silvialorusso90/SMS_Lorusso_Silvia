@@ -18,7 +18,7 @@
     <string name="ordina">Order</string>
     <string name="inserisci_i_tuoi_dati">Insert your info</string>
 
-    <string name="ora_consegna">Delivery time: OO.MM</string>
+    <string name="ora_consegna">Delivery time: OO:MM</string>
     <string name="termina_ordine">End order</string>
     <string name="numero_carta">Card Number</string>
     <string name="_0000_0000_0000_0000" translatable="false">0000 0000 0000 0000</string>

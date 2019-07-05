@@ -7,6 +7,14 @@
     tools:context=".RistoratoreActivity"
     tools:showIn="@layout/activity_ristoratore"
     android:background="@color/color">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <TextView
         android:id="@+id/txtView"
@@ -17,6 +25,7 @@
         android:text="@string/ristoratore"
         android:fontFamily="@font/courgette"
         android:textSize="36sp"
+        android:layout_below="@id/toolbar"
         android:textColor="@color/colorPrimary" />
 
     <ImageView

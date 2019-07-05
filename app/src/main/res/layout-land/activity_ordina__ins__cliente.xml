@@ -6,11 +6,21 @@
     android:layout_height="match_parent"
     android:background="@color/color">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="60sp"
         android:layout_marginRight="60sp"
+        android:layout_below="@id/toolbar"
         android:orientation="vertical">
 
         <TextView
@@ -61,6 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/tel"
+                android:inputType="number"
                 android:singleLine="true"
                 android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>
@@ -75,6 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ora_consegna"
+                android:inputType="time"
                 android:singleLine="true"
                 android:textSize="14sp" />
         </android.support.design.widget.TextInputLayout>

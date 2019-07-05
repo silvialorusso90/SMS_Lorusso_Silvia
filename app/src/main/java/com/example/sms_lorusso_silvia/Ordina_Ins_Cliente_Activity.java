@@ -100,7 +100,7 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
     }
 
     private boolean oraConsegnaValida(String oraConsegna) {
-        if(oraConsegna.length()==5 && oraConsegna.contains("."))
+        if(oraConsegna.length()==5 && oraConsegna.contains(":"))
             return true;
         else
             return false;

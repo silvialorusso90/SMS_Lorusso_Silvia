@@ -9,12 +9,22 @@
     tools:context=".Modifica_menu_activity"
     android:background="@color/color">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="250sp"
         android:layout_height="250sp"
         android:layout_marginTop="40sp"
         android:layout_marginLeft="50sp"
+        android:layout_below="@id/toolbar"
         app:srcCompat="@drawable/menu"  />
 
     <Button
@@ -24,7 +34,7 @@
         android:onClick="lanciaAggiungiPiatto"
         android:text="@string/aggiungi_piatto"
         android:layout_marginLeft="430sp"
-        android:layout_marginTop="110sp"
+        android:layout_marginTop="150sp"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
