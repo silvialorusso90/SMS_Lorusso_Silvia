@@ -14,7 +14,7 @@
         app:titleTextColor="@android:color/white"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="@string/dati_p"/>
+        app:title="@string/dati_p" />
 
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:text="@string/numero_carta"
         android:layout_below="@id/toolbar"
         android:textSize="14sp"
@@ -31,6 +31,7 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/nCarta"
         android:layout_below="@id/toolbar"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
