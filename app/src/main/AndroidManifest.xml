@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sms_lorusso_silvia" >
+    package="com.example.sms_lorusso_silvia">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,44 +10,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icona_c"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Pagadopo_Activity"
-            ></activity>
-        <activity android:name=".Pagato_Activity"
-            />
-        <activity android:name=".Paga_Activity"
-            android:label="@string/dati_p"
-            />
-        <activity android:name=".Riepilogo_Ordine_Activity"
-            />
-        <activity android:name=".Ordina_Ins_Piatto_Activity"
-            />
-        <activity android:name=".Ordina_Ins_Cliente_Activity"
-            android:label="@string/ordina"
-            />
-        <activity android:name=".Rimuovi_Piatto_Activity"
-            />
-        <activity android:name=".Aggiungi_Piatto_Activity"
-            />
-        <activity android:name=".Modifica_menu_activity"
-            />
-        <activity android:name=".Visualizza_menu_activity"
-            android:label="Menu"
-            />
-        <activity android:name=".Visualizza_comande_activity"
-            android:label="@string/ordini"
-            />
-        <activity android:name=".Cliente_Activity"
-            />
-        <activity android:name=".RistoratoreActivity"
-            />
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Pagadopo_Activity" />
+        <activity android:name=".Pagato_Activity" />
+        <activity
+            android:name=".Paga_Activity"
+            android:label="@string/dati_p" />
+        <activity android:name=".Riepilogo_Ordine_Activity" />
+        <activity android:name=".Ordina_Ins_Piatto_Activity" />
+        <activity
+            android:name=".Ordina_Ins_Cliente_Activity"
+            android:label="@string/ordina" />
+        <activity android:name=".Rimuovi_Piatto_Activity" />
+        <activity android:name=".Aggiungi_Piatto_Activity" />
+        <activity android:name=".Modifica_menu_activity" />
+        <activity
+            android:name=".Visualizza_menu_activity"
+            android:label="Menu" />
+        <activity
+            android:name=".Visualizza_comande_activity"
+            android:label="@string/ordini" />
+        <activity android:name=".Cliente_Activity" />
+        <activity android:name=".RistoratoreActivity" />
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

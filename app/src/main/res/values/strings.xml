@@ -24,7 +24,7 @@
     <string name="il_pagamento_andato_a_buon_fine">il pagamento è andato a buon fine</string>
     <string name="grazie_per_averci_scelto">Grazie per averci scelto</string>
     <string name="a_dopo">a dopo</string>
-    <string name="riepilogo_ordine">Riepilogo ordine:</string>
+    <string name="riepilogo_ordine">Riepilogo ordine</string>
     <string name="paga_ora">Paga ora</string>
     <string name="paga_alla_consegna">Paga alla consegna</string>
     <string name="cliente">Cliente</string>
@@ -43,7 +43,7 @@
     <string name="prezzo">Prezzo</string>
     <string name="take_away">Take Away</string>
     <string name="ordini">Ordini:</string>
-    <string name="dati_p">Dati pagamento:</string>
+    <string name="dati_p">Dati pagamento</string>
     <string name="app_name">Take Away</string>
     <string name="aggiungi">Aggiungi</string>
     <string name="rimuovi">Rimuovi</string>

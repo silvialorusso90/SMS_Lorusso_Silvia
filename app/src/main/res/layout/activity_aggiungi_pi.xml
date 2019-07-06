@@ -11,6 +11,8 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
+        app:title="Dati piatto"
+        app:titleTextColor="@android:color/white"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
@@ -21,16 +23,6 @@
         android:layout_below="@id/toolbar"
         android:paddingLeft="20sp"
         android:paddingRight="20sp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/courgette"
-            android:text="@string/inserisci_i_dati_del_piatto"
-            android:textColor="@color/colorPrimary"
-            android:textSize="16sp" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/nomeLayout"

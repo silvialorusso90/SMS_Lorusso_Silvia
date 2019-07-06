@@ -16,7 +16,7 @@ import com.example.sms_lorusso_silvia.mMySQL.Sender_o_i_c;
 public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
 
     String urlAddress="http://spacecrafts.altervista.org/ScritturaDati/scrivi_utenti.php";
-    EditText nomeTxt, cognomeTxt, telefonoTxt, oraconsegnaTxt;
+    EditText nomeTxt, cognomeTxt, telefonoTxt, oraconsegnaTxt, minconsegnaTxt;
     Button saveBtn;
 
     @Override
@@ -36,6 +36,7 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
         cognomeTxt = (EditText) findViewById(R.id.cognomeEditTxt);
         telefonoTxt = (EditText) findViewById(R.id.telefonoEditTxt);
         oraconsegnaTxt = (EditText) findViewById(R.id.oraconsegnaEditTxt);
+        minconsegnaTxt = (EditText) findViewById(R.id.minconsegnaEditTxt);
 
         saveBtn= (Button) findViewById(R.id.saveBtn);
 
@@ -52,7 +53,8 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
         String nome = nomeTxt.getText().toString();
         String cognome = cognomeTxt.getText().toString();
         String telefono = telefonoTxt.getText().toString();
-        String oraConsegna = oraconsegnaTxt.getText().toString();
+        int oraConsegna = Integer.parseInt(oraconsegnaTxt.getText().toString());
+        int minConsegna = Integer.parseInt(minconsegnaTxt.getText().toString());
 
         //Validazione dati
         if(!nomeValido(nome) ){
@@ -72,8 +74,13 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
             showDialog("Errore: ora consegna non valida","Errore", android.R.drawable.ic_dialog_alert);
             Toast.makeText(getApplicationContext(),"Ora consegna non Valida", Toast.LENGTH_SHORT).show();
         }
+        else if(!minConsegnaValidi(minConsegna)){
+            showDialog("Errore: minuti consegna non validi","Errore", android.R.drawable.ic_dialog_alert);
+            //Toast.makeText(getApplicationContext(),"Ora consegna non Valida", Toast.LENGTH_SHORT).show();
+        }
         else {
-            Sender_o_i_c s=new Sender_o_i_c(Ordina_Ins_Cliente_Activity.this,urlAddress, nomeTxt, cognomeTxt, telefonoTxt, oraconsegnaTxt);
+
+            Sender_o_i_c s=new Sender_o_i_c(Ordina_Ins_Cliente_Activity.this,urlAddress, nomeTxt, cognomeTxt, telefonoTxt, oraconsegnaTxt, minconsegnaTxt);
             s.execute();
         }
     }
@@ -99,12 +106,28 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
             return false;
     }
 
-    private boolean oraConsegnaValida(String oraConsegna) {
-        if(oraConsegna.length()==5 && oraConsegna.contains(":"))
+    private boolean oraConsegnaValida(int oraConsegna) {
+        if(oraConsegna >=0 && oraConsegna < 24)
             return true;
         else
             return false;
     }
+
+    private boolean minConsegnaValidi(int minConsegna) {
+        if(minConsegna >=0 && minConsegna < 60)
+            return true;
+        else
+            return false;
+    }
+
+    /*
+    private boolean oraConsegnaValida(String oraConsegna) {
+        if(oraConsegna.length()==2 && oraConsegna.contains("0"))
+            return true;
+        else
+            return false;
+    }
+    */
 
     // TODO: Creare un alert dialog da mostrare in caso di registration failed
     private void showDialog(String message, String title, int icon){

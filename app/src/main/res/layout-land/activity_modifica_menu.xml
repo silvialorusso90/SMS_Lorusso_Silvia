@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Modifica_menu_activity"
+    tools:showIn="@layout/activity_modifica_menu"
     android:background="@color/color">
 
     <android.support.v7.widget.Toolbar
@@ -20,21 +21,21 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250sp"
-        android:layout_height="250sp"
-        android:layout_marginTop="40sp"
-        android:layout_marginLeft="50sp"
+        android:layout_width="@dimen/dim_image_land"
+        android:layout_height="@dimen/dim_image_land"
+        android:layout_marginTop="50dp"
         android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/marginleft_image_land"
         app:srcCompat="@drawable/menu"  />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="420dp"
         android:onClick="lanciaAggiungiPiatto"
         android:text="@string/aggiungi_piatto"
-        android:layout_marginLeft="430sp"
-        android:layout_marginTop="150sp"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
@@ -43,8 +44,8 @@
         android:id="@+id/button2"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button1"
         android:layout_below="@id/button1"
-        android:layout_marginLeft="430sp"
         android:layout_marginTop="5sp"
         android:onClick="lanciaRimuoviPiatto"
         android:background="@color/colorPrimary"

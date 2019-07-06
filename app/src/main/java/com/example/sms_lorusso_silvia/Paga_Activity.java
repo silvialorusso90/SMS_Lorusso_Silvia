@@ -24,7 +24,6 @@ public class Paga_Activity extends AppCompatActivity {
 
         initUI();
 
-
     }
 
     private void initUI() {

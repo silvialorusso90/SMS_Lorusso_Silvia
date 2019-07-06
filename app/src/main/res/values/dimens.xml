@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_image_land">250sp</dimen>
+    <dimen name="top_textview_land">20sp</dimen>
+    <dimen name="marginleft_image_land">50dp</dimen>
+</resources>

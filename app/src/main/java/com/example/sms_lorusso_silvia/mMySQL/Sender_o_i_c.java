@@ -31,18 +31,19 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
 
     Context c;
     String urlAddress;
-    EditText nomeTxt, cognomeTxt, telefonoTxt, oraconsegnaTxt;
+    EditText nomeTxt, cognomeTxt, telefonoTxt, oraconsegnaTxt, minconsegnaTxt;
     Utenti utenti;
 
     ProgressDialog pd;
 
-    public Sender_o_i_c(Context c, String urlAddress, EditText nomeTxt, EditText cognomeTxt, EditText telefonoTxt, EditText oraconsegnaTxt) {
+    public Sender_o_i_c(Context c, String urlAddress, EditText nomeTxt, EditText cognomeTxt, EditText telefonoTxt, EditText oraconsegnaTxt, EditText minconsegnaTxt) {
         this.c = c;
         this.urlAddress = urlAddress;
         this.nomeTxt = nomeTxt;
         this.cognomeTxt = cognomeTxt;
         this.telefonoTxt = telefonoTxt;
         this.oraconsegnaTxt = oraconsegnaTxt;
+        this.minconsegnaTxt = minconsegnaTxt;
 
         utenti = new Utenti();
 
@@ -50,6 +51,8 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
         utenti.setCognome(cognomeTxt.getText().toString());
         utenti.setTelefono(telefonoTxt.getText().toString());
         utenti.setOraconsegna(oraconsegnaTxt.getText().toString());
+        utenti.setMinconsegna(minconsegnaTxt.getText().toString());
+
 
     }
 
@@ -96,9 +99,12 @@ public class Sender_o_i_c extends AsyncTask<Void,Void,String> {
     }
 
     private void intent() {
+        String ora = oraconsegnaTxt.getText().toString();
+        String min = minconsegnaTxt.getText().toString();
+        String orac = ora+":"+min;
         Intent i = new Intent(c, Ordina_Ins_Piatto_Activity.class);
         i.putExtra("Telefono", telefonoTxt.getText().toString());
-        i.putExtra("OraConsegna", oraconsegnaTxt.getText().toString());
+        i.putExtra("OraConsegna", orac);
         c.startActivity(i);
     }
 

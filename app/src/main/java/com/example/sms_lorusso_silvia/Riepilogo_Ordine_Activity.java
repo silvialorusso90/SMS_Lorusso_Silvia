@@ -26,7 +26,9 @@ public class Riepilogo_Ordine_Activity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         final String tel = extras.getString("Telefono");
         final String orac = extras.getString("OraConsegna");
-        setTitle("Tel: "+tel+"   OraC: "+orac);
+
+        toolbar.setTitle("Riepilogo ordine");
+        toolbar.setSubtitle("Tel: "+tel+"   OraC: "+orac);
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recy);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

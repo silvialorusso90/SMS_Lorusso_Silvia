@@ -27,6 +27,7 @@ public class Packager_o_i_c {
             jo.put("Cognome", utenti.getCognome());
             jo.put("Telefono", utenti.getTelefono());
             jo.put("OraConsegna", utenti.getOraconsegna());
+            jo.put("MinConsegna", utenti.getMinconsegna());
 
             Boolean firstvalue=true;
             Iterator it=jo.keys();

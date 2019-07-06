@@ -2,7 +2,7 @@ package com.example.sms_lorusso_silvia.mDataObject;
 
 public class Utenti {
     int  telefonoo;
-    String nome, cognome, oraconsegna;
+    String nome, cognome, oraconsegna, minconsegna;
 
     String telefono = Integer.toString(telefonoo);
 
@@ -45,5 +45,13 @@ public class Utenti {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getMinconsegna() {
+        return minconsegna;
+    }
+
+    public void setMinconsegna(String minconsegna) {
+        this.minconsegna = minconsegna;
     }
 }
