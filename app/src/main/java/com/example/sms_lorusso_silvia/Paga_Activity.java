@@ -18,15 +18,13 @@ public class Paga_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paga);
 
-        //setTitle("Dati pagamento");
-
         initUI();
 
     }
 
     private void initUI() {
 
-        nCartaT = (EditText) findViewById(R.id.sCartaTxt);
+        nCartaT = (EditText) findViewById(R.id.nCartaTxt);
         sCartaT = (EditText) findViewById(R.id.sCartaTxt);
         cvvCartaT = (EditText) findViewById(R.id.cvvCartaTxt);
         pagaBtn = (Button) findViewById(R.id.btnPaga);

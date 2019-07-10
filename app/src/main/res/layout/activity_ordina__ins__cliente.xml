@@ -145,6 +145,7 @@
             android:gravity="clip_horizontal|center|clip_vertical"
             android:hint="OO"
             android:inputType="number"
+            android:maxLength="2"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
 
@@ -214,6 +215,7 @@
             android:gravity="clip_horizontal|center|clip_vertical"
             android:hint="mm"
             android:inputType="number"
+            android:maxLength="2"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
 

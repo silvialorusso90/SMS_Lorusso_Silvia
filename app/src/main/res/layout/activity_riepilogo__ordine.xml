@@ -1,58 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/relative"
-    android:layout_above="@id/toolbar"
     android:background="@color/color">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@android:color/white"
+            app:subtitleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        app:title="@string/riepilogo_ordine"
-        android:elevation="4dp"
-        android:theme="?attr/actionBarTheme" />
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/color"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".Ordina_Ins_Piatto_Activity"
+            tools:showIn="@layout/activity_riepilogo__ordine">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recy"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/color"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
-        android:layout_above="@id/button"
-        android:padding="10dp" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="20dp"
-        android:onClick="Lanciapagaora"
-        android:text="@string/paga_ora"
-        android:background="@color/colorPrimary"
-        android:textSize="14sp"
-        android:textColor="@android:color/white"
-        />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center|center_vertical"
+            android:onClick="Lanciapagaora"
+            android:text="@string/paga_ora"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
-        android:onClick="lanciapagadopo"
-        android:text="@string/paga_alla_consegna"
-        android:background="@color/colorPrimary"
-        android:textSize="14sp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="10dp"
-        android:textColor="@android:color/white"
-        android:layout_alignParentRight="true" />
+        <Button
+            android:id="@+id/aveBtn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center|center_vertical"
+            android:onClick="lanciapagadopo"
+            android:text="@string/paga_alla_consegna"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
 
-</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
