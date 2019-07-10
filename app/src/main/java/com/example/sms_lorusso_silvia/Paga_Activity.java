@@ -4,11 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class Paga_Activity extends AppCompatActivity {
 
@@ -28,7 +26,7 @@ public class Paga_Activity extends AppCompatActivity {
 
     private void initUI() {
 
-        nCartaT = (EditText) findViewById(R.id.nCartaTxt);
+        nCartaT = (EditText) findViewById(R.id.sCartaTxt);
         sCartaT = (EditText) findViewById(R.id.sCartaTxt);
         cvvCartaT = (EditText) findViewById(R.id.cvvCartaTxt);
         pagaBtn = (Button) findViewById(R.id.btnPaga);

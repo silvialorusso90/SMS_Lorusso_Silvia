@@ -98,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/tel"
+            android:inputType="phone"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
 
@@ -143,6 +144,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal|center|clip_vertical"
             android:hint="OO"
+            android:inputType="number"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
 
@@ -211,6 +213,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal|center|clip_vertical"
             android:hint="mm"
+            android:inputType="number"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
 
