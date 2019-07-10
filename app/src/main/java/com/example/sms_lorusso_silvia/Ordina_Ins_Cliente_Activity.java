@@ -58,24 +58,24 @@ public class Ordina_Ins_Cliente_Activity extends AppCompatActivity {
 
         //Validazione dati
         if(!nomeValido(nome) ){
-            showDialog("Errore: nome non valido","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: il nome deve contenere almeno 3 caratteri","Errore", android.R.drawable.ic_dialog_alert);
             //Toast.makeText(getApplicationContext(),"Nome non Valido", Toast.LENGTH_SHORT).show();
         }
 
         else if(!cognomeValido(cognome)){
-            showDialog("Errore: cognome non valido","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: il cognome deve contenere almeno 4 caratteri","Errore", android.R.drawable.ic_dialog_alert);
             Toast.makeText(getApplicationContext(),"Cognome non Valido", Toast.LENGTH_SHORT).show();
         }
         else if(!telefonoValido(telefono)){
-            showDialog("Errore: telefono non valido","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: il numero di telefono deve avere 10 cifre","Errore", android.R.drawable.ic_dialog_alert);
             Toast.makeText(getApplicationContext(),"Telefono non Valido", Toast.LENGTH_SHORT).show();
         }
         else if(!oraConsegnaValida(oraConsegna)){
-            showDialog("Errore: ora consegna non valida","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: ora consegna deve essere compresa tra 0 e 23","Errore", android.R.drawable.ic_dialog_alert);
             Toast.makeText(getApplicationContext(),"Ora consegna non Valida", Toast.LENGTH_SHORT).show();
         }
         else if(!minConsegnaValidi(minConsegna)){
-            showDialog("Errore: minuti consegna non validi","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: minuti consegna deve essere compreso tra 0 e 59","Errore", android.R.drawable.ic_dialog_alert);
             //Toast.makeText(getApplicationContext(),"Ora consegna non Valida", Toast.LENGTH_SHORT).show();
         }
         else {

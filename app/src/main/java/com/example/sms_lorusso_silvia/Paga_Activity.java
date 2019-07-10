@@ -45,13 +45,13 @@ public class Paga_Activity extends AppCompatActivity {
 
         //Validazione dati
         if(!nCartaValido(nCarta) ){
-            showDialog("Errore: numero di carta non valido","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: numero carta deve contenere 16 cifre","Errore", android.R.drawable.ic_dialog_alert);
         }
         else if(!sCartaValido(sCarta)){
-            showDialog("Errore: scadenza non valida","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: scadenza deve essere nel formato mm/AAAA","Errore", android.R.drawable.ic_dialog_alert);
         }
         else if(!cvvCartaValido(cvvCarta)){
-            showDialog("Errore: cvv non valido","Errore", android.R.drawable.ic_dialog_alert);
+            showDialog("Errore: cvv deve avere 3 cifre","Errore", android.R.drawable.ic_dialog_alert);
         }
         else{
             Intent i = new Intent(Paga_Activity.this, Pagato_Activity.class);
